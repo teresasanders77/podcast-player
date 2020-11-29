@@ -1,20 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const PodcastList = ({ PodcastList = [] }) => {
+function PodcastList({ results }) {
+  let data = [];
+  if (results.data) {
+    data = results.data.Search || [];
+  }
+  console.log(data);
   return (
-    <>
-      { PodcastList.map((data, index) => {
-        if (data) {
-          return (
-            <div key={data.name}>
-              <h1>{data.name}</h1>
-            </div>
-          )
-        }
-        return null
-      })}
-    </>
+    <div className="result">
+      It is working
+    </div>
   );
 }
 
-export default PodcastList
+export default PodcastList;

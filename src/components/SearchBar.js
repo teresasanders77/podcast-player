@@ -1,16 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'
+import { listenNotesApi } from '../axios'
 
-const SearchBar = ({ input: keyword, onChange: setKeyword }) => {
-  const BarStyling = { width: "20rem", background: "#F2F1F9", border: "none", padding: "0.5rem" };
+import SearchBarItem from './SearchBarItem'
+
+export const SearchBar = () => {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [searchResults, setSearchResults] = useState(null)
+
+  useEffect(() => {
+    if (searchTerm) {
+      const search = async () => {
+        const {
+          data: { podcasts },
+        } = await listenNotesApi.get(
+          `/typeahead?q=${searchTerm}&show_podcasts=1`,
+        )
+        if (podcasts.length) setSearchResults(podcasts)
+      }
+      search()
+    } else {
+      setSearchResults(null)
+    }
+  }, [searchTerm])
+
   return (
-    <input
-      style={BarStyling}
-      key="random1"
-      value={keyword}
-      placeholder={"Search podcasts"}
-      onChange={(e) => setKeyword(e.target.value)}
-    />
-  );
+    <div>
+      <input
+        className="input"
+        type='search'
+        value={searchTerm}
+        onChange={e => setSearchTerm(e.target.value)}
+        placeholder='Search shows and podcasts'
+      />
+      {searchTerm && (
+        <div>
+          <ul>
+            {searchResults &&
+              searchResults.map(podcast => (
+                <SearchBarItem
+                  clearSearch={() => setSearchTerm('')}
+                  key={podcast.id}
+                  {...podcast}
+                />
+              ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default SearchBar
