@@ -6,16 +6,19 @@ import SearchBarItem from './SearchBarItem'
 export const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     if (searchTerm) {
       const search = async () => {
+        setIsLoading(true)
         const {
           data: { podcasts },
         } = await listenNotesApi.get(
           `/typeahead?q=${searchTerm}&show_podcasts=1`,
         )
         if (podcasts.length) setSearchResults(podcasts)
+        setIsLoading(false)
       }
       search()
     } else {
@@ -24,17 +27,18 @@ export const SearchBar = () => {
   }, [searchTerm])
 
   return (
-    <div>
+    <div className="SearchBar">
       <input
-        className="input"
-        type='search'
+        type="text"
+        className="podcast"
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
-        placeholder='Search shows and podcasts'
+        placeholder="Search podcasts"
       />
       {searchTerm && (
         <div>
           <ul>
+            {isLoading}
             {searchResults &&
               searchResults.map(podcast => (
                 <SearchBarItem
