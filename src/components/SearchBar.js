@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { listenNotesApi } from '../axios'
 
 import SearchBarItem from './SearchBarItem'
+import SearchBarIcon from './Icons/SearchBar.js'
 
 export const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -28,6 +29,8 @@ export const SearchBar = () => {
 
   return (
     <div className="SearchBar">
+      <h2>Welcome!</h2>
+      <h1>Explore top podcast!</h1>
       <input
         type="text"
         className="podcast"

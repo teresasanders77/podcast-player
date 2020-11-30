@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="231px" height="21px" viewBox="0 0 231 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Scrubber</title>
+    <defs>
+        <path d="M2.39416742,9.59574468 L148.085657,9.59574468 C148.861206,9.59574468 149.489912,10.2244512 149.489912,11 C149.489912,11.7755488 148.861206,12.4042553 148.085657,12.4042553 L2.39416742,12.4042553 C1.61861862,12.4042553 0.989912098,11.7755488 0.989912098,11 C0.989912098,10.2244512 1.61861862,9.59574468 2.39416742,9.59574468 Z" id="path-1"></path>
+        <path d="M150.970818,9.59574468 L229.562308,9.59574468 C230.337856,9.59574468 230.966563,10.2244512 230.966563,11 C230.966563,11.7755488 230.337856,12.4042553 229.562308,12.4042553 L150.970818,12.4042553 C150.19527,12.4042553 149.566563,11.7755488 149.566563,11 C149.566563,10.2244512 150.19527,9.59574468 150.970818,9.59574468 Z" id="path-2"></path>
+    </defs>
+    <g id="Scrubber" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Track" fill="#000000">
+                <use xlink:href="#path-1"></use>
+                <use style="mix-blend-mode: overlay;" xlink:href="#path-1"></use>
+            </g>
+            <g id="Track-(Dimmed)">
+                <use fill-opacity="0.199999988" fill="#000000" xlink:href="#path-2"></use>
+                <use fill="#8B8B8B" style="mix-blend-mode: overlay;" xlink:href="#path-2"></use>
+            </g>
+            <circle fill="#6BE0CB" cx="158.86433" cy="10.725" r="9.9"></circle>
+        </g>
+    </g>
+</svg>

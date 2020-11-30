@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from './components/SearchBar.js';
 
 
+
 class App extends Component {
 
   render() {

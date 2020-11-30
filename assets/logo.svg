@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="22px" viewBox="0 0 70 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Podlife" font-family="BigNoodleTitling" font-size="14" font-weight="normal" letter-spacing="1.711111" fill="#000000">
+            <tspan x="24" y="17">Podlife</tspan>
+        </text>
+        <g id="Group" transform="translate(-0.265137, 4.398438)">
+            <path d="M5,12 C7.42431072,14.6666667 10.0909774,14.6666667 13,12" id="Path-2" stroke="#000000"></path>
+            <circle id="Oval" fill="#000000" cx="6.26513672" cy="7.6015625" r="2"></circle>
+            <path d="M1,6.57104492 L1,6.57104492 Z" id="Path-6" stroke="#979797"></path>
+            <circle id="Oval-Copy" fill="#000000" cx="12.2651367" cy="7.6015625" r="2"></circle>
+            <path d="M1.06396484,8.49536133 C3.70302584,4.06867187 -0.05859375,0 9.10327148,0 C18.2651367,0 15.0177597,3.83255473 17.1425781,8.56103516" id="Path" stroke="#000000"></path>
+            <rect id="Rectangle" fill="#000000" x="0.265136719" y="5.6015625" width="3" height="4" rx="1"></rect>
+            <rect id="Rectangle-Copy" fill="#000000" x="15.2651367" y="5.6015625" width="3" height="4" rx="1"></rect>
+        </g>
+    </g>
+</svg>
