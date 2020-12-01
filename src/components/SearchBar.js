@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { listenNotesApi } from '../axios'
-
+import Logo from './Icons/Logo.js'
 import SearchBarItem from './SearchBarItem'
-import SearchBarIcon from './Icons/SearchBar.js'
+
 
 export const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -29,6 +29,9 @@ export const SearchBar = () => {
 
   return (
     <div className="SearchBar">
+      <div className="logo">
+        <Logo width="70pt" />
+      </div>
       <h2>Welcome!</h2>
       <h1>Explore top podcast!</h1>
       <input

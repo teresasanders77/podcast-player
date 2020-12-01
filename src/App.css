@@ -12,4 +12,16 @@ body {
 
 .App {
   text-align: center;
+  height:100vh;
+  margin:0;
+  background-image:radial-gradient(108.5% 110% at top left, transparent 92.4%, #4045F5 92.5%);
+  background-repeat:no-repeat;
 }
+
+.logo {
+  float: left;
+  padding-left: 20px; 
+  position: fixed;
+}
+
+
