@@ -3,7 +3,6 @@ import { listenNotesApi } from '../axios'
 import Logo from './Icons/Logo.js'
 import SearchBarItem from './SearchBarItem'
 
-
 export const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState(null)
