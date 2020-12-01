@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import SearchBar from './components/SearchBar.js';
-import BackgroundImage from './components/Icons/BackgroundImage.js';
+import { SearchBar } from './components/SearchBar';
+import Results from './components/Results.js'
 import Logo from './components/Icons/Logo.js'
+import { Route, Switch } from 'react-router-dom'
 
-class App extends Component {
-
-
-  render() {
-    return (
-      <div
-        className="App"
-        style={{ background: `url(${BackgroundImage})` }}
-      >
-        <div className="logo">
-          <Logo width="70pt" />
-        </div>
-        <SearchBar />
+function App() {
+  return (
+    <div className="App">
+      <div className="logo">
+        <Logo width="70pt" />
       </div>
-
-    );
-  }
+      <Switch>
+        <Route exact path='/' component={SearchBar} />
+        <Route path='/results' component={Results} />
+      </Switch>
+    </div>
+  );
 }
 
 export default App;

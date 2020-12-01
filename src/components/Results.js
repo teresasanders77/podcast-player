@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Results extends Component {
+export const Results = () => {
 
+  return (
+    <div>
+      It worked!
+    </div>
 
-  render() {
-    return (
-      <div>
-        It worked!
-      </div>
-
-    );
-  }
+  );
 }
+
 
 export default Results;
