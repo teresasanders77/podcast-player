@@ -13,7 +13,7 @@ function App() {
       </div>
       <Switch>
         <Route exact path='/' component={SearchBar} />
-        <Route path='/results' component={Results} />
+        <Route path='/podcast:id' component={Results} />
       </Switch>
     </div>
   );

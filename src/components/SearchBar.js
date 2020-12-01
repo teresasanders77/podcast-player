@@ -4,7 +4,7 @@ import { listenNotesApi } from '../axios';
 import Logo from './Icons/Logo.js';
 import { SearchBarItem } from './SearchBarItem';
 
-export const SearchBar = () => {
+export function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
@@ -27,11 +27,9 @@ export const SearchBar = () => {
     }
   }, [searchTerm])
 
-  function handleSubmit(event) {
-    if (searchResults > 0) {
-      <Redirect to="/results/:searchResults" />
-    }
-
+  function handleSubmit(e) {
+    console.log(searchResults);
+    e.preventDefault();
   }
 
   return (
