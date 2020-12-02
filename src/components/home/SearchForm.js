@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from "react-router-dom";
 
 import { searchPodcast, fetchPodcasts } from '../../actions/searchActions';
 
@@ -12,6 +13,7 @@ export class SearchForm extends Component {
   onSubmit = e => {
     e.preventDefault();
     this.props.fetchPodcasts(this.props.text)
+    this.props.history.push("/results");
   }
 
   render() {
@@ -38,7 +40,7 @@ const mapStateToProps = state => ({
   text: state.podcasts.text
 })
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   { searchPodcast, fetchPodcasts }
-)(SearchForm);
+)(SearchForm));
