@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router'
 import { Redirect } from 'react-router'
+import { useHistory } from 'react-router-dom';
 import { listenNotesApi } from '../axios';
 import Logo from './Icons/Logo.js';
-import { SearchBarItem } from './SearchBarItem';
 
 export function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchResults, setSearchResults] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
+  const history = useHistory();
 
   useEffect(() => {
     if (searchTerm) {
@@ -28,6 +30,7 @@ export function SearchBar(props) {
   }, [searchTerm])
 
   function handleSubmit(e) {
+    history.push("/results");
     console.log(searchResults);
     e.preventDefault();
   }
@@ -48,23 +51,8 @@ export function SearchBar(props) {
           placeholder="Search podcasts"
         />
       </form>
-      {searchTerm && (
-        <div>
-          <ul>
-            {isLoading}
-            {searchResults &&
-              searchResults.map(podcast => (
-                <SearchBarItem
-                  clearSearch={() => setSearchTerm('')}
-                  key={podcast.id}
-                  {...podcast}
-                />
-              ))}
-          </ul>
-        </div>
-      )}
     </div>
   )
 }
 
-export default SearchBar
+export default withRouter(SearchBar)
