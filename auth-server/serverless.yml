@@ -58,15 +58,14 @@ provider:
 #    - exclude-me.js
 #    - exclude-me-dir/**
 
-functions:
 service: auth-server
 
 provider:
   name: aws
   runtime: nodejs12.x
   environment:
-    App name: "wdui_2"
-    Token: "5ed5c7f10b7d42eea0c279453efdcbfe"
+    REACT_APP_LISTEN_NOTES_NAME: ${file(config.json):REACT_APP_LISTEN_NOTES_NAME}
+    REACT_APP_LISTEN_NOTES_API_KEY: ${file(config.json):REACT_APP_LISTEN_NOTES_API_KEY}
 functions:
   getAuthURL:
     handler: handler.getAuthURL
@@ -74,8 +73,8 @@ functions:
       - http:
           path: api/get-auth-url
           method: get
-  hello:
-    handler: handler.hello
+  #hello:
+    #handler: handler.hello
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

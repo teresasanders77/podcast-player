@@ -1,28 +1,11 @@
 import React, { useState } from 'react';
 import { SearchBarItem } from './SearchBarItem';
 
-export const Results = () => {
-  const [searchTerm, setSearchTerm] = useState('')
-  const [searchResults] = useState(null)
-  const [isLoading] = useState(false)
+export const Results = (searchResults) => {
 
   return (
     <div>
-      { searchTerm && (
-        <div>
-          <ul>
-            {isLoading}
-            {searchResults &&
-              searchResults.map(podcast => (
-                <SearchBarItem
-                  clearSearch={() => setSearchTerm('')}
-                  key={podcast.id}
-                  {...podcast}
-                />
-              ))}
-          </ul>
-        </div>
-      )}
+      {JSON.stringify(searchResults)}
     </div>
   )
 };
