@@ -1,24 +1,23 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import PodcastCard from './PodcastCard';
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import PodcastCard from "./PodcastCard";
 
-export class PodcastsContainer extends Component {
-  render() {
-    const { podcasts } = this.props;
-    let content = '';
-
-    content = podcasts.length > 0 ? podcasts.map((podcast, index) => <PodcastCard key=
-      {index} podcast={podcast} />) : null;
-    return (
-      <div className="row">
-        {content}
-      </div>
-    )
+const PodcastsContainer = (props) => {
+  const { podcasts } = props;
+  let content = "";
+  if (podcasts === undefined) {
+    console.log("Unable to find any movies");
+  } else {
+    content = podcasts.map((podcast, index) => (
+      <PodcastCard key={index} podcast={podcast} />
+    ));
+    console.log(content);
   }
-}
+  return <div>{content}</div>;
+};
 
-const mapStateToProps = state => ({
-  podcasts: state.podcasts.podcasts
-})
+const mapStateToProps = (state) => ({
+  podcasts: state.podcasts.podcasts.podcasts,
+});
 
 export default connect(mapStateToProps)(PodcastsContainer);

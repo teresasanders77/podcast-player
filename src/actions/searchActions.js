@@ -14,7 +14,7 @@ export const fetchPodcasts = text => dispatch => {
   )
     .then(response => dispatch({
       type: FETCH_PODCASTS,
-      payload: response.data.Search,
+      payload: response.data,
     }))
     .catch(err => console.log(err))
 }

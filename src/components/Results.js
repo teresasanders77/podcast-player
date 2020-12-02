@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { SearchBarItem } from './SearchBarItem';
+import React, from 'react';
 
 export const Results = (searchResults) => {
 
