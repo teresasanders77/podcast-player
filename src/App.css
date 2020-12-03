@@ -17,6 +17,7 @@ body {
   margin:0;
   background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;
+  position: fixed;
 }
 
 .logo {
@@ -25,9 +26,17 @@ body {
   position: fixed;
 }
 
-h2{
+h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16pt;
+  padding: 0;
+  margin-top: 15%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 30pt;
 }
 
 input {
@@ -43,8 +52,8 @@ background-color:#F5F5F5;
 }
 
 #searchForm {
-  margin: 10%; 
-  margin-top: 20%;
+  margin: 3%; 
+  width: 90%;
 }
 
 #searchForm button {
@@ -74,5 +83,7 @@ input.form-control {
   height: auto;
   margin-right: 40px; 
 }
+
+
 
 

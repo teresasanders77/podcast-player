@@ -18,24 +18,28 @@ export class SearchForm extends Component {
 
   render() {
     return (
-      <div>
-        <form id="searchForm" onSubmit={this.onSubmit}>
-          <div class="p-1 rounded  shadow-sm">
-            <div class="input group">
-              <div class="input-group-prepend">
-                <button id="button-addon2" type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
-                <input
-                  type="text"
-                  className="form-control border-0"
-                  name="searchText"
-                  placeholder="Search podcasts"
-                  onChange={this.onChange}
-                />
-                <i class="fa fa-microphone"></i>
+      <div className="searchForm">
+        <div className="searchDiv">
+          <h2>Welcome!</h2>
+          <h1>Explore top podcasts!</h1>
+          <form id="searchForm" onSubmit={this.onSubmit}>
+            <div class="p-1 rounded  shadow-sm">
+              <div class="input group">
+                <div class="input-group-prepend">
+                  <button id="button-addon2" type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                  <input
+                    type="text"
+                    className="form-control border-0"
+                    name="searchText"
+                    placeholder="Search podcasts"
+                    onChange={this.onChange}
+                  />
+                  <i class="fa fa-microphone"></i>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     )
   }

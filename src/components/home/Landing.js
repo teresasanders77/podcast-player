@@ -9,8 +9,6 @@ export class Landing extends Component {
     const { loading } = this.props;
     return (
       <div>
-        <h2>Welcome!</h2>
-        <h1>Explore top podcasts!</h1>
         <SearchForm />
         {loading ? <Spinner /> : <PodcastsContainer />}
       </div>
