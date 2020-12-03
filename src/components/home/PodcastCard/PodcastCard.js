@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
+
 export class PodcastCard extends Component {
+
   render() {
     const { podcast } = this.props;
     return (

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import PodcastCard from "./PodcastCard";
+import PodcastCard from "../PodcastCard/PodcastCard";
+import BackButton from '../../Icons/BackButton.js'
+
 
 const PodcastsContainer = (props) => {
   const { podcasts } = props;
@@ -8,9 +10,10 @@ const PodcastsContainer = (props) => {
   if (podcasts === undefined) {
     console.log("Unable to find any movies");
   } else {
-    content = podcasts.map((podcast, index) => (
-      <PodcastCard key={index} podcast={podcast} />
-    ));
+    content =
+      podcasts.map((podcast, index) => (
+        <PodcastCard key={index} podcast={podcast} />
+      ));
     console.log(content);
   }
   return <div>{content}</div>;

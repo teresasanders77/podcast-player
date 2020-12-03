@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SearchForm from './SearchForm';
-import PodcastsContainer from './PodcastsContainer';
-import Spinner from '../layout/Spinner';
+import SearchForm from '../SearchForm/SearchForm';
+import PodcastsContainer from '../PodcastsContainer/PodcastsContainer';
+import Spinner from '../../layout/Spinner';
+
 
 export class Landing extends Component {
   render() {

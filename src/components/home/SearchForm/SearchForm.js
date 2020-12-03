@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
 
-import { searchPodcast, fetchPodcasts } from '../../actions/searchActions';
+import { searchPodcast, fetchPodcasts } from '../../../actions/searchActions';
 
 export class SearchForm extends Component {
+
+  state = {
+    visible: false
+  }
 
   onChange = e => {
     this.props.searchPodcast(e.target.value);
@@ -20,6 +24,8 @@ export class SearchForm extends Component {
     return (
       <div className="searchForm">
         <div className="searchDiv">
+          <div className="backButton">
+          </div>
           <h2>Welcome!</h2>
           <h1>Explore top podcasts!</h1>
           <form id="searchForm" onSubmit={this.onSubmit}>
