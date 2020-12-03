@@ -20,16 +20,21 @@ export class SearchForm extends Component {
     return (
       <div>
         <form id="searchForm" onSubmit={this.onSubmit}>
-          <input
-            type="text"
-            className="form-control"
-            name="searchText"
-            placeholder="Search podcasts"
-            onChange={this.onChange}
-          />
-          <button type="submit" className="btn btn-primary btn-bg mt-3">
-            Search
-            </button>
+          <div class="p-1 rounded  shadow-sm">
+            <div class="input group">
+              <div class="input-group-prepend">
+                <button id="button-addon2" type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                <input
+                  type="text"
+                  className="form-control border-0"
+                  name="searchText"
+                  placeholder="Search podcasts"
+                  onChange={this.onChange}
+                />
+                <i class="fa fa-microphone"></i>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     )
