@@ -12,11 +12,12 @@ body {
 
 .App {
   text-align: center;
-  height:100%;
+  height:100vh;
   width: 100%;
   margin:0;
   background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;
+  position: fixed;
 
 }
 
