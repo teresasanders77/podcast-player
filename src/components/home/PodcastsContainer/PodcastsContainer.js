@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import PodcastCard from "../PodcastCard/PodcastCard";
-import BackButton from '../../Icons/BackButton.js'
+import './PodcastsContainer.css';
+
 
 
 const PodcastsContainer = (props) => {
@@ -15,6 +16,7 @@ const PodcastsContainer = (props) => {
         <PodcastCard key={index} podcast={podcast} />
       ));
     console.log(content);
+    console.log(podcasts.length);
   }
   return <div>{content}</div>;
 };

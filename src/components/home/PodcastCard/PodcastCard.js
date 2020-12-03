@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './PodcastCard.css';
 
 export class PodcastCard extends Component {
 

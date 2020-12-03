@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
+import './SearchForm.css';
 
 import { searchPodcast, fetchPodcasts } from '../../../actions/searchActions';
 
 export class SearchForm extends Component {
-
-  state = {
-    visible: false
-  }
 
   onChange = e => {
     this.props.searchPodcast(e.target.value);
@@ -29,9 +26,9 @@ export class SearchForm extends Component {
           <h2>Welcome!</h2>
           <h1>Explore top podcasts!</h1>
           <form id="searchForm" onSubmit={this.onSubmit}>
-            <div class="p-1 rounded  shadow-sm">
-              <div class="input group">
-                <div class="input-group-prepend">
+            <div className="p-1 rounded  shadow-sm">
+              <div className="input group">
+                <div className="input-group-prepend">
                   <button id="button-addon2" type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
                   <input
                     type="text"
@@ -40,7 +37,7 @@ export class SearchForm extends Component {
                     placeholder="Search podcasts"
                     onChange={this.onChange}
                   />
-                  <i class="fa fa-microphone"></i>
+                  <i className="fa fa-microphone"></i>
                 </div>
               </div>
             </div>

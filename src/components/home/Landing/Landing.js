@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import SearchForm from '../SearchForm/SearchForm';
 import PodcastsContainer from '../PodcastsContainer/PodcastsContainer';
 import Spinner from '../../layout/Spinner';
+import './Landing.css';
 
 
 export class Landing extends Component {
