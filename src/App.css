@@ -39,6 +39,7 @@ h1 {
   font-size: 30pt;
 }
 
+/*Search bar styling*/
 input {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16pt;
@@ -84,6 +85,66 @@ input.form-control {
   margin-right: 40px; 
 }
 
+/*Media queries- mobile responsivity*/
+/*Ipad size*/
+@media all and (min-width: 760px) and (max-width: 1200px) {
+  h2 {
+    margin-top: 30%;
+  }
 
+  #searchForm {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
 
+/*iphone 6/7/8 Plus size*/
+@media all and (min-width: 400px) and (max-width: 759px) {
+  h2 {
+    margin-top: 40%;
+    margin-right: 66%;
+  }
+
+  h1 {
+    font-size: 25pt; 
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  #searchForm {
+    width: 94%;
+
+  }
+}
+
+/*iphone 5/SE size*/
+@media all and (max-width: 399px) {
+  h2 {
+    margin-top: 40%;
+    margin-right: 66%;
+    font-size: 14pt;
+  }
+
+  h1 {
+    font-size: 20pt; 
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  #searchForm {
+    width: 93%;
+
+  }
+
+  .fa-microphone:before {
+    margin-right: 200%;
+    margin-top: 10px; 
+    font-size: 125%;
+  }
+
+  button, .fa-search:before {
+    font-size: medium;
+margin-top: -10px; 
+  }
+}
 
