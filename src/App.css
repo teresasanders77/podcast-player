@@ -117,6 +117,9 @@ p {
   font-size: 14pt; 
 }
 
+.podcastsContainer {
+  background: white;
+}
 
 /*Media queries- mobile responsivity*/
 /*Ipad size*/

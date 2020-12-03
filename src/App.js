@@ -19,7 +19,9 @@ class App extends Component {
         <Switch>
           <Provider store={store}>
             <Route exact path='/' component={Landing} />
-            <Route path='/results' component={PodcastsContainer} />
+            <div className="podcastsContainer">
+              <Route path='/results' component={PodcastsContainer} />
+            </div>
           </Provider>
         </Switch>
       </div>
