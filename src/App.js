@@ -3,7 +3,8 @@ import { Provider } from 'react-redux';
 import './App.css';
 import Logo from './components/Icons/Logo.js'
 import { Route, Switch } from 'react-router-dom'
-import Landing from './components/home/Landing/Landing';
+import Landing from './components/home/SearchForm/SearchForm';
+import SearchForm from './components/home/Landing/Landing';
 import PodcastsContainer from './components/home/PodcastsContainer/PodcastsContainer';
 import BackButton from './components/Icons/BackButton'
 
@@ -22,17 +23,19 @@ class App extends Component {
           <a href='/'> <BackButton /></a>
           Results ()
         </div>
-        <Switch>
-          <Provider store={store}>
-            <Route exact path='/' component={Landing} />
-            <div className="podcastsContainer">
-              <Route
-                path='/results'
-                component={PodcastsContainer}
-              />
-            </div>
-          </Provider>
-        </Switch>
+        <Provider store={store}>
+          <SearchForm>
+            <Switch>
+              <Route exact path='/' component={Landing} />
+              <div className="podcastsContainer">
+                <Route
+                  path='/results'
+                  component={PodcastsContainer}
+                />
+              </div>
+            </Switch>
+          </SearchForm>
+        </Provider>
       </div>
     );
   }
