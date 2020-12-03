@@ -23,8 +23,6 @@ export class SearchForm extends Component {
         <div className="searchDiv">
           <div className="backButton">
           </div>
-          <h2>Welcome!</h2>
-          <h1>Explore top podcasts!</h1>
           <form id="searchForm" onSubmit={this.onSubmit}>
             <div className="p-1 rounded  shadow-sm">
               <div className="input group">

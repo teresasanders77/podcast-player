@@ -22,7 +22,7 @@ const PodcastsContainer = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  podcasts: state.podcasts.podcasts.podcasts,
+  podcasts: state.podcasts.podcasts.results,
 });
 
 export default connect(mapStateToProps)(PodcastsContainer);
