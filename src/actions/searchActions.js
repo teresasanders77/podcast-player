@@ -10,7 +10,7 @@ export const searchPodcast = text => dispatch => {
 
 export const fetchPodcasts = text => dispatch => {
   listenNotesApi.get(
-    `/search?q=${text}&sort_by_date=0&type=episode`,
+    `/search?q=${text}&sort_by_date=0&type=episode&language=English`,
   )
     .then(response => dispatch({
       type: FETCH_PODCASTS,

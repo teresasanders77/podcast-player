@@ -1,4 +1,64 @@
 button {
   background-color: #FFFFFF;
+}
+
+.rhap_container, .rhap_container *:focus {
+  outline: none;
+}
+
+.rhap_container svg {
+color: #4045F5;
+}
+
+.rhap_container {
+font-family: 'Source Sans Pro', sans-serif;
+border-color: #4045F5;
+box-shadow: 0 0 3px 0 #4045F5;
+border-radius: 40px;
+
+}
+
+.rhap_volume-indicator {
+  background: #4045F5;
+}
+
+.rhap_progress-indicator {
+  background: #6BE0CB;
+}
+
+.rhap_progress-filled {
+  background-color: black;
+}
+
+.card {
   border: none;
+}
+
+.card *:focus {
+  border: none; 
+}
+
+.card-body {
+  margin-top: -20px; 
+}
+
+.card-text {
+  color: black; 
+}
+
+h5 {
+  color: black;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.card-header {
+  background-color: #FFFFFF;
+  border: 0px;
 }
