@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player'
+import AudioPlayer from 'react-h5-audio-player'
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -23,7 +23,7 @@ export class PodcastCard extends Component {
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h5 className="card-title">{podcast.podcast.publisher_original}</h5>
+                      <h5 className="card-title">{podcast.podcast.title_original}</h5>
                       <p className="card-text">{podcast.title_original}</p>
                       <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
                     </div>
