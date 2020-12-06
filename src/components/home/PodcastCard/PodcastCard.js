@@ -24,7 +24,7 @@ export class PodcastCard extends Component {
                   <div className="col-md-8">
                     <div className="card-body">
                       <h5 className="card-title">{podcast.podcast.title_original}</h5>
-                      <p className="card-text">{podcast.title_original}</p>
+                      <h6 className="card-text">{podcast.title_original}</h6>
                       <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
                     </div>
                   </div>
@@ -36,6 +36,7 @@ export class PodcastCard extends Component {
                 <AudioPlayer
                   src={podcast.audio}
                   onPlay={e => console.log("onPlay")}
+                  layout="horizontal"
                 // other props here
                 />
               </Card.Body>

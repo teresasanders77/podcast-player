@@ -2,8 +2,34 @@ button {
   background-color: #FFFFFF;
 }
 
+p {
+  font-size: 18.48px;
+  line-height: 23.23px; 
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 21.12px;
+  line-height: 26.55px; 
+}
+
+h6 {
+  font-size: 21.12px;
+  line-height: 26.55px; 
+}
+
+.rhap_volume-button {
+  font-size: 22px;  
+  margin-right: 20px; 
+}
+
 .rhap_container, .rhap_container *:focus {
-  outline: none;
+  outline: none; 
+}
+
+.rhap_container {
+  margin-top: 30px;
+  margin-left: 60px;
 }
 
 .rhap_container svg {
@@ -13,15 +39,93 @@ color: #4045F5;
 .rhap_container {
 font-family: 'Source Sans Pro', sans-serif;
 border-color: #4045F5;
-box-shadow: 0 0 3px 0 #4045F5;
+border-style: solid; 
 border-radius: 40px;
+border-width: 1px; 
+width: 728px; 
+height: 83px;
+}
 
+.rhap_main-controls {
+  position: relative;
+  left: 150px; 
+  bottom: 20px; 
+}
+
+.rhap_main-controls-button {
+  border-radius: 50px; 
+  border-color: #4045F5;
+  border-style: solid;
+  border-width: 1px; 
+  font-size: 50px; 
+  width: 50px; 
+  height: 50px;
+  
+}
+
+.rhap_main-controls-button svg {
+  padding: 5px;
+}
+
+.rhap_play-pause-button {
+  border-style: none; 
+  font-size: 100px; 
+  width: 100px; 
+  height: 100px;
+}
+
+.rhap_volume-container {
+position: relative;
+right: 400px;  
+bottom: 17px; 
 }
 
 .rhap_volume-indicator {
-  background: #4045F5;
+  background: #6BE0CB; 
+  width: 15px; 
+  height: 15px; 
+  top: -5px; 
 }
 
+.rhap_volume-bar-area {
+  width: 200px; 
+}
+
+.rhap_additional-controls {
+  position: relative;
+left: 440px;
+bottom: 17px; 
+}
+
+.rhap_repeat-button {
+  font-size: 22px;
+}
+
+.rhap_progress-section {
+  position: relative;
+  left: 130px; 
+  bottom: 100px; 
+  
+}
+
+.rhap_progress-bar {
+  position: absolute;
+  width: 260px; 
+  
+}
+
+.rhap_time {
+  position: relative;
+  top: 20px; 
+}
+
+#rhap_current-time {
+  left: 40px; 
+}
+
+.rhap_total-time {
+  left: 175px; 
+}
 .rhap_progress-indicator {
   background: #6BE0CB;
 }
