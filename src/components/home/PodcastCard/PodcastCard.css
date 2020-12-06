@@ -2,6 +2,10 @@ button {
   background-color: #FFFFFF;
 }
 
+.btn-link:focus {
+  text-decoration: none; 
+}
+
 p {
   font-size: 18.48px;
   line-height: 23.23px; 
