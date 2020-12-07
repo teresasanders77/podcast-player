@@ -26,6 +26,7 @@ export class PodcastCard extends Component {
                       <h5 className="card-title">{podcast.podcast.title_original}</h5>
                       <h6 className="card-text">{podcast.title_original}</h6>
                       <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
+                      <p className="card-text">{podcast.audio_lenth_sec}</p>
                     </div>
                   </div>
                 </Row>

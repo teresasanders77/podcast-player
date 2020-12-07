@@ -27,7 +27,7 @@ export class SearchForm extends Component {
             <div className="p-1 rounded  shadow-sm">
               <div className="input group">
                 <div className="input-group-prepend">
-                  <button id="button-addon2" type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                  <button id="button-addon2" type="submit" className="btn btn-link"><i class="fa fa-search"></i></button>
                   <input
                     type="text"
                     className="form-control border-0"

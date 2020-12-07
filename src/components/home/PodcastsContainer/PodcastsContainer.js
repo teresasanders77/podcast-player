@@ -15,10 +15,8 @@ const PodcastsContainer = (props) => {
       podcasts.map((podcast, index) => (
         <PodcastCard key={index} podcast={podcast} />
       ));
-    console.log(content);
-    console.log(podcasts.length);
   }
-  return <div>{content}</div>;
+  return <div className="podcastContent">{content}</div>;
 };
 
 const mapStateToProps = (state) => ({
