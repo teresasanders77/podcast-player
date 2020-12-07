@@ -9,6 +9,15 @@ import './PodcastCard.css';
 
 export class PodcastCard extends Component {
 
+  formatTime(secs) {
+    let hours = Math.floor(secs / 3600);
+    let minutes = Math.floor(secs / 60) % 60;
+    let seconds = secs % 60;
+    return [hours, minutes, seconds]
+      .map(v => ('' + v).padStart(2, '0'))
+      .filter((v, i) => v !== '00' || i > 0)
+      .join(':');
+  }
   render() {
     const { podcast } = this.props;
     return (
@@ -26,7 +35,7 @@ export class PodcastCard extends Component {
                       <h5 className="card-title">{podcast.podcast.title_original}</h5>
                       <h6 className="card-text">{podcast.title_original}</h6>
                       <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
-                      <p className="card-text">{podcast.audio_lenth_sec}</p>
+                      <p className="card-text">{this.formatTime(podcast.audio_length_sec)} </p>'
                     </div>
                   </div>
                 </Row>
@@ -48,5 +57,4 @@ export class PodcastCard extends Component {
     )
   }
 }
-
 export default PodcastCard
