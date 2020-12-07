@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom'
 import Landing from './components/home/SearchForm/SearchForm';
 import SearchForm from './components/home/Landing/Landing';
 import PodcastsContainer from './components/home/PodcastsContainer/PodcastsContainer';
-import BackButton from './components/Icons/BackButton'
+
 
 import store from './store';
 
@@ -19,10 +19,7 @@ class App extends Component {
         <div className="logo">
           <Logo width="70pt" />
         </div>
-        <div style={{ float: 'left', marginTop: '60px', marginLeft: '20px' }}>
-          <a href='/'> <BackButton /></a>
-          Results ()
-        </div>
+
         <Provider store={store}>
           <SearchForm>
             <Switch>
