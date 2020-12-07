@@ -16,7 +16,7 @@ export class Landing extends Component {
     const { podcasts } = this.props;
     if (podcasts === undefined) {
       return (
-        <div>
+        <div className="resultsBackground2">
           <h2>Welcome!</h2>
           <h1>Explore top podcasts!</h1>
           <SearchForm />
@@ -24,7 +24,7 @@ export class Landing extends Component {
       )
     } else {
       return (
-        <div>
+        <div className="resultsBackground">
           <SearchForm />
           <PodcastsContainer />
         </div>
