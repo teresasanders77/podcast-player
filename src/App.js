@@ -19,7 +19,6 @@ class App extends Component {
         <div className="logo">
           <Logo width="70pt" />
         </div>
-
         <Provider store={store}>
           <SearchForm>
             <Switch>

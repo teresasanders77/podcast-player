@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchForm from '../SearchForm/SearchForm';
 import PodcastsContainer from '../PodcastsContainer/PodcastsContainer';
-import Spinner from '../../layout/Spinner';
 import './Landing.css';
 
 
@@ -24,7 +23,12 @@ export class Landing extends Component {
         </div>
       )
     } else {
-      return <PodcastsContainer />;
+      return (
+        <div>
+          <SearchForm />
+          <PodcastsContainer />
+        </div>
+      )
     }
   }
 }

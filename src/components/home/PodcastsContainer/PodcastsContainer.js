@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import PodcastCard from "../PodcastCard/PodcastCard";
 import './PodcastsContainer.css';
 import BackButton from '../../Icons/BackButton';
-import SearchForm from '../Landing/Landing';
 
 
 
