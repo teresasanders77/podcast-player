@@ -19,7 +19,7 @@ const PodcastsContainer = (props) => {
       ));
   }
   if (content.length > 0) {
-    return <div className="podcastContent"><div style={{ float: 'left', marginTop: '60px', marginLeft: '20px' }}>
+    return <div className="podcastContent"><div style={{ float: 'left', marginTop: '60px', marginLeft: '20px', position: 'sticky', top: '50px' }}>
       <a href='/'> <BackButton /></a>
   Results ({content.length})
 </div>{content}</div>;
