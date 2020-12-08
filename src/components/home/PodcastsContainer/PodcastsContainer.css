@@ -17,6 +17,13 @@
   margin-left: 60px;
 }
 
+.resultsBackground {
+  background-color: white; 
+}
+
+.resultsBackground .resultsBackground2 {
+  position: fixed; 
+}
 
 .podcastsContainer {
   background: #F2F2F2;
@@ -24,12 +31,12 @@
 
 
 /*Media queries- mobile responsivity*/
+
 /*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1200px) {
-.resultsContent {
-  width: 100%;
-}
-
+  .resultsContent {
+    width: 100%;
+  }
 }
 
 /*Small size*/

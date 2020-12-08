@@ -1,3 +1,4 @@
+/*Card is wrapped in a button so it is clickable*/
 button {
   background-color: #FFFFFF;
 }
@@ -11,7 +12,43 @@ border: none;
   outline: none;
 }
 
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+/*Card styling*/
+.card {
+  border: none;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.card-header {
+  background-color: #FFFFFF;
+  border: 0px;
+}
+
+.card-body {
+  margin-top: -20px; 
+  text-align: left;
+}
+
+.img-fluid {
+  border-radius: 20%;
+  padding: 5px; 
+}
+
+/*Card text styling*/
+.card-text {
+  color: black; 
+}
+
 p {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18.48px;
   line-height: 23.23px; 
 }
@@ -27,11 +64,7 @@ h6 {
   line-height: 26.55px; 
 }
 
-.rhap_volume-button {
-  font-size: 22px;  
-  margin-right: 20px; 
-}
-
+/*Audio player styling*/
 .rhap_container, .rhap_container *:focus {
   outline: none; 
 }
@@ -39,22 +72,48 @@ h6 {
 .rhap_container {
   margin-top: 30px;
   margin-left: 60px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-color: #4045F5;
+  border-style: solid; 
+  border-radius: 40px;
+  border-width: 1px; 
+  width: 728px; 
+  height: 83px;
 }
 
 .rhap_container svg {
 color: #4045F5;
 }
 
-.rhap_container {
-font-family: 'Source Sans Pro', sans-serif;
-border-color: #4045F5;
-border-style: solid; 
-border-radius: 40px;
-border-width: 1px; 
-width: 728px; 
-height: 83px;
+/*Volume*/
+.rhap_volume-button {
+  font-size: 22px;  
+  margin-right: 20px; 
 }
 
+.rhap_volume-container {
+  position: relative;
+  right: 400px;  
+  bottom: 10px; 
+}
+  
+.rhap_volume-indicator {
+  background: #6BE0CB; 
+  width: 15px; 
+  height: 15px; 
+  top: -5px; 
+  margin-left: 0;
+}
+  
+.rhap_volume-bar-area {
+  width: 200px; 
+}
+  
+.rhap_volume-filled {
+  background-color: #4045F5;
+}
+
+/*Play controls*/
 .rhap_main-controls {
   position: relative;
   left: 150px; 
@@ -95,43 +154,22 @@ height: 83px;
 
 }
 
-.rhap_volume-container {
-position: relative;
-right: 400px;  
-bottom: 10px; 
-}
-
-.rhap_volume-indicator {
-  background: #6BE0CB; 
-  width: 15px; 
-  height: 15px; 
-  top: -5px; 
-  margin-left: 0;
-}
-
-.rhap_volume-bar-area {
-  width: 200px; 
-}
-
-.rhap_volume-filled {
-  background-color: #4045F5;
-}
-
+/*Repeat button*/
 .rhap_additional-controls {
   position: relative;
-left: 440px;
-bottom: 10px; 
+  left: 440px;
+  bottom: 10px; 
 }
 
 .rhap_repeat-button {
   font-size: 22px;
 }
 
+/*Progress bar*/
 .rhap_progress-section {
   position: relative;
   left: 130px; 
   bottom: 100px; 
-  
 }
 
 .rhap_progress-bar {
@@ -152,6 +190,7 @@ bottom: 10px;
 .rhap_total-time {
   left: 175px; 
 }
+
 .rhap_progress-indicator {
   background: #6BE0CB;
 }
@@ -160,68 +199,9 @@ bottom: 10px;
   background-color: black;
 }
 
-.card {
-  border: none;
-}
-
-.card-body {
-  margin-top: -20px; 
-}
-
-.card-text {
-  color: black; 
-}
-
-h5 {
-  color: black;
-}
-
-.btn-link:hover {
-  text-decoration: none;
-}
-
-.btn.focus, .btn:focus {
-  box-shadow: none;
-}
-
-.card-header {
-  background-color: #FFFFFF;
-  border: 0px;
-}
-
-
-/*Card styling*/
-.card {
-  max-width: 50%;
-  
-
-  /*border: none;*/
-  margin-left: 25%;
-}
-
-.img-fluid {
-  border-radius: 20%;
-  padding: 5px; 
-}
-
-
-.card-body {
-  text-align: left;
-  margin-top: 10%
-}
-
-h5 {
-  font-weight: bold; 
-  font-size: 16pt;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-p {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14pt; 
-}
 
 /*Media queries- mobile responsivity*/
+
 /*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1200px) {
 

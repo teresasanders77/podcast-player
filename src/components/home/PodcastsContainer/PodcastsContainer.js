@@ -23,6 +23,7 @@ const PodcastsContainer = (props) => {
       <div className="logo">
         <Logo width="70pt" />
       </div>
+
       <div style={{
         float: 'left',
         marginTop: '60px',
@@ -33,6 +34,7 @@ const PodcastsContainer = (props) => {
         <a href='/'><BackButton /></a>
         &nbsp;&nbsp;&nbsp; Results ({content.length})
       </div>
+
       <div className="resultsContent">
         {content}
       </div>
