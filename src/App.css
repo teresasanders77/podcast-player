@@ -11,7 +11,7 @@ body {
   text-align: center;
   height:100vh;
   width: 100%;
-  margin-top: -58px;
+  margin-top: -65px;
   background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;
   position: static;
@@ -83,60 +83,6 @@ p {
 }
 
 /*Media queries- mobile responsivity*/
-/*Medium size*/
-@media all and (min-width: 760px) and (max-width: 1200px) {
-  h2 {
-    margin-top: 30%;
-  }
-}
 
-/*iphone 6/7/8 Plus size*/
-@media all and (min-width: 400px) and (max-width: 759px) {
-  h2 {
-    margin-top: 40%;
-    margin-right: 66%;
-  }
 
-  h1 {
-    font-size: 25pt; 
-    margin-right: 10%;
-    margin-bottom: 5%;
-  }
-
-  #searchForm {
-    width: 94%;
-
-  }
-}
-
-/*iphone 5/SE size*/
-@media all and (max-width: 399px) {
-  h2 {
-    margin-top: 40%;
-    margin-right: 66%;
-    font-size: 14pt;
-  }
-
-  h1 {
-    font-size: 20pt; 
-    margin-right: 10%;
-    margin-bottom: 5%;
-  }
-
-  #searchForm {
-    width: 93%;
-
-  }
-
-  .fa-microphone:before {
-    margin-right: 200%;
-    margin-top: 10px; 
-    font-size: 125%;
-  }
-
-  button, .fa-search:before {
-    font-size: medium;
-margin-top: -10px; 
-  }
-}
 

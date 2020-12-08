@@ -188,3 +188,19 @@ h5 {
   background-color: #FFFFFF;
   border: 0px;
 }
+
+/*Media queries- mobile responsivity*/
+/*Medium size*/
+@media all and (min-width: 760px) and (max-width: 1200px) {
+
+  }
+  
+  /*Small size*/
+  @media all and (min-width: 400px) and (max-width: 759px) {
+    
+  }
+  
+  /*Extra small size*/
+  @media all and (max-width: 399px) {
+    
+  }
