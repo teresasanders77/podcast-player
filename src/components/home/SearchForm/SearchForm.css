@@ -111,3 +111,39 @@ input.form-control {
     margin-left: 20px; 
   }
 }
+
+/*Extra small size*/
+@media all and (max-width: 399px) {
+  h2 {
+    margin-top: 60%;
+    margin-left: -3%;
+    font-size: 14pt;
+  }
+
+  h1 {
+    font-size: 20pt; 
+    margin-right: 25%;
+  }
+
+  #searchForm {
+    margin-top: -5px; 
+    margin-left: 20px; 
+    width: 90%;
+
+  }
+
+  .fa-microphone:before {
+    margin-right: 200%;
+    margin-top: 10px; 
+    font-size: 20px; 
+  }
+
+  .fa-search:before {
+    margin-left: -100%;
+  }
+
+  input.form-control {
+    width: 87%;
+    margin-left: 20px; 
+  }
+}
