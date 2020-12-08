@@ -25,8 +25,8 @@ export class Landing extends Component {
     } else {
       return (
         <div className="resultsBackground">
-          <SearchForm />
           <PodcastsContainer />
+          <SearchForm />
         </div>
       )
     }

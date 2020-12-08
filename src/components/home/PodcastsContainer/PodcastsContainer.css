@@ -3,5 +3,16 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   line-height: 22.63px;
+  height:100vh;
+  width: 100%;
+  margin:0;
+  background-repeat:no-repeat;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+.resultsContent {
+  margin-top: 250px; 
+  margin-bottom: 75px; 
 }
 

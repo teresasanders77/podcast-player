@@ -24,6 +24,7 @@ body {
 .logo {
   float: left;
   padding-left: 20px; 
+  top: 20px; 
   position: fixed;
 }
 

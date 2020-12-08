@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import PodcastCard from "../PodcastCard/PodcastCard";
 import './PodcastsContainer.css';
 import BackButton from '../../Icons/BackButton';
+import SearchForm from '../SearchForm/SearchForm';
+import Logo from '../../Icons/Logo.js'
 
 
 
@@ -19,17 +21,22 @@ const PodcastsContainer = (props) => {
   }
   if (content.length > 0) {
     return <div className="podcastContent">
+      <div className="logo">
+        <Logo width="70pt" />
+      </div>
       <div style={{
         float: 'left',
         marginTop: '60px',
         marginLeft: '20px',
         position: 'sticky',
-        top: '60px'
+        top: '90px'
       }}>
         <a href='/'><BackButton /></a>
         &nbsp;&nbsp;&nbsp; Results ({content.length})
       </div>
-      {content}
+      <div className="resultsContent">
+        {content}
+      </div>
     </div>;
   };
   return null;
