@@ -47,7 +47,7 @@ export class PodcastCard extends Component {
                   src={podcast.audio}
                   onPlay={e => console.log("onPlay")}
                   layout="horizontal"
-                // other props here
+                  autoPlayAfterSrcChange={false}
                 />
               </Card.Body>
             </Accordion.Collapse>
