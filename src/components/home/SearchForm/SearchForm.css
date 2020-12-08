@@ -72,3 +72,42 @@ input.form-control {
     margin-left: 20px; 
   }
 }
+
+/*Small size*/
+@media all and (min-width: 400px) and (max-width: 759px) {
+  h2 {
+    margin-top: 70%;
+    margin-left: -8%;
+    font-size: 16px;
+    line-height: 20.11px;
+    letter-spacing: 0.3555556px; 
+  }
+
+  h1 {
+    font-size: 30px; 
+    line-height: 35px;
+    letter-spacing: -.5px; 
+    margin-right: 25%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  }
+
+  #searchForm {
+    margin-top: 0%;
+    margin-left: 5%; 
+    width: 92%;
+  }
+
+  .fa-microphone:before {
+    margin-right: 200%;
+  }
+
+  .fa-search:before {
+    margin-left: -100%;
+  }
+
+  input.form-control {
+    width: 87%;
+    margin-left: 20px; 
+  }
+}
