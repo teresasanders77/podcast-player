@@ -30,15 +30,23 @@ body {
 
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16pt;
+  font-size: 24px;
+  line-height: 30px; 
+  letter-spacing: 0.533333px; 
+  color: #030303;
   padding: 0;
   margin-top: 15%;
+  margin-bottom: -5px; 
+  margin-left: 125px; 
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 30pt;
+  font-size: 36px;
+  line-height: 42px; 
+  letter-spacing: -0.6px; 
+  color: #030303;
 }
 
 /*Search bar styling*/
