@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { SEARCH_PODCAST, FETCH_PODCASTS } from '../actions/types';
 
 const initialState = {

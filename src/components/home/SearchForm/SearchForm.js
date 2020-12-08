@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
 import './SearchForm.css';
-
 import { searchPodcast, fetchPodcasts } from '../../../actions/searchActions';
 
 export class SearchForm extends Component {
@@ -11,6 +10,7 @@ export class SearchForm extends Component {
     this.props.searchPodcast(e.target.value);
   }
 
+  /*Function to fetch podcasts and change route*/
   onSubmit = e => {
     e.preventDefault();
     this.props.fetchPodcasts(this.props.text)
@@ -21,8 +21,6 @@ export class SearchForm extends Component {
     return (
       <div className="searchForm">
         <div className="searchDiv">
-          <div className="backButton">
-          </div>
           <form id="searchForm" onSubmit={this.onSubmit}>
             <div className="p-1 rounded  shadow-sm">
               <div className="input group">

@@ -46,7 +46,9 @@ input.form-control {
   margin-right: 40px; 
 }
 
+
 /*Media queries- mobile responsivity*/
+
 /*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1200px) {
   h2 {
