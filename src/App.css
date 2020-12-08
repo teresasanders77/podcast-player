@@ -83,15 +83,10 @@ p {
 }
 
 /*Media queries- mobile responsivity*/
-/*Ipad size*/
+/*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1200px) {
   h2 {
     margin-top: 30%;
-  }
-
-  #searchForm {
-    width: 80%;
-    margin-left: 10%;
   }
 }
 
