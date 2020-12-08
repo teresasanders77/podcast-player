@@ -1,8 +1,8 @@
-.searchDiv {
-  position: relative;
+#searchForm {
+  position: sticky;
   width: 50%;
   height: 48px;
-  top: 175px;
+  top: 20px;
   margin-left: 25%; 
 }
 
