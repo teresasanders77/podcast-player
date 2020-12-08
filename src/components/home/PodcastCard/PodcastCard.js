@@ -48,6 +48,7 @@ export class PodcastCard extends Component {
                   onPlay={e => console.log("onPlay")}
                   layout="horizontal"
                   autoPlayAfterSrcChange={false}
+                  showFilledVolume={true}
                 />
               </Card.Body>
             </Accordion.Collapse>

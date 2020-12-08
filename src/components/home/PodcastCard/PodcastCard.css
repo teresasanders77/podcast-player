@@ -97,10 +97,15 @@ bottom: 17px;
   width: 15px; 
   height: 15px; 
   top: -5px; 
+  margin-left: 0;
 }
 
 .rhap_volume-bar-area {
   width: 200px; 
+}
+
+.rhap_volume-filled {
+  background-color: #4045F5;
 }
 
 .rhap_additional-controls {
