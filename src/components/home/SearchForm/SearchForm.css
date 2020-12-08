@@ -1,8 +1,48 @@
 #searchForm {
   position: sticky;
-  width: 50%;
-  height: 48px;
-  top: 20px;
-  margin-left: 25%; 
+  width: 82.89%;
+  height: 6.98%;
+  top: 20px; 
+  margin-left: 8.5%; 
+  margin-top: 65px; 
+}
+
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16pt;
+  margin-left: -20px; 
+}
+
+.rounded, .border-0 {
+background-color:#F5F5F5;
+
+}
+
+#searchForm button {
+  float: left;
+  width: 10%;
+ margin-left: 10px;
+  color: #4B4B4B;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.fa-microphone:before {
+  float: right;
+  width: 10%;
+  margin-right: 74px;
+  margin-top: 13px; 
+  color: #4B4B4B;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.form-control {
+  padding: 0;
+}
+
+input.form-control {
+  height: auto;
+  margin-right: 40px; 
 }
 

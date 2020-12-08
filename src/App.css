@@ -3,14 +3,11 @@
   --secondaryColor: #6BE0CB;
   --text: #000000;
   --neutral: #F5F5F5;
-  --background: #FFFFFF;
+  --background: #F2F2F2;
 }
 
 body {
   font-family: 'Playfair Display', serif;
-}
-
-body {
   text-align: center;
   height:100vh;
   width: 100%;
@@ -35,9 +32,9 @@ h2 {
   letter-spacing: 0.533333px; 
   color: #030303;
   padding: 0;
-  margin-top: 15%;
-  margin-bottom: -5px; 
-  margin-left: 125px; 
+  margin-top: 21%;
+  margin-bottom: -10px; 
+  margin-left: 112px; 
 }
 
 h1 {
@@ -49,51 +46,6 @@ h1 {
   color: #030303;
 }
 
-/*Search bar styling*/
-input {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16pt;
-  width: 90%;
-  margin-left: 20px; 
-}
-
-.rounded, .border-0 {
-background-color:#F5F5F5;
-
-}
-
-#searchForm {
-  margin: 3%; 
-  width: 90%;
-}
-
-#searchForm button {
-  float: left;
-  width: 10%;
- margin-left: 10px;
-  color: #4B4B4B;
-  font-size: 150%;
-  cursor: pointer;
-}
-
-.fa-microphone:before {
-  float: right;
-  width: 10%;
-  margin-right: 60px;
-  margin-top: 13px; 
-  color: #4B4B4B;
-  font-size: 150%;
-  cursor: pointer;
-}
-
-.form-control {
-  padding: 0;
-}
-
-input.form-control {
-  height: auto;
-  margin-right: 40px; 
-}
 
 /*Card styling*/
 .card {
@@ -127,7 +79,7 @@ p {
 }
 
 .podcastsContainer {
-  background: white;
+  background: #F2F2F2;
 }
 
 /*Media queries- mobile responsivity*/
