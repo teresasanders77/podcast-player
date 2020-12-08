@@ -10,7 +10,6 @@ import './PodcastCard.css';
 
 export class PodcastCard extends Component {
 
-  /*Function to turn the podcast length from seconds to minutes*/
   formatTime(secs) {
     let hours = Math.floor(secs / 3600);
     let minutes = Math.floor(secs / 60) % 60;
@@ -20,10 +19,8 @@ export class PodcastCard extends Component {
       .filter((v, i) => v !== '00' || i > 0)
       .join(':');
   }
-
   render() {
     const { podcast } = this.props;
-
     return (
       <div id="container">
         <Accordion>
@@ -66,5 +63,4 @@ export class PodcastCard extends Component {
     )
   }
 }
-
 export default PodcastCard
