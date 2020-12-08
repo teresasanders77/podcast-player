@@ -17,6 +17,12 @@
   margin-left: 60px;
 }
 
+
+.podcastsContainer {
+  background: #F2F2F2;
+}
+
+
 /*Media queries- mobile responsivity*/
 /*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1200px) {
