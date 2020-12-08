@@ -34,7 +34,7 @@ class App extends Component {
           </SearchForm>
         </Provider>
         <div className="apiLogo">
-          <img src={APILogo} alt="API logo" />
+          <a href="https://www.listennotes.com/" target="_blank" rel="ListenNotes.com"> <img src={APILogo} alt="API logo" /></a>
         </div>
       </div>
     );
