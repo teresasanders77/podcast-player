@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AudioPlayer from 'react-h5-audio-player'
 import Accordion from 'react-bootstrap/Accordion';
+import { BsPlayFill, BsPauseFill } from 'react-icons/bs'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
@@ -49,6 +50,10 @@ export class PodcastCard extends Component {
                   layout="horizontal"
                   autoPlayAfterSrcChange={false}
                   showFilledVolume={true}
+                  customIcons={{
+                    play: <BsPlayFill size={15} color="#4045F5" />,
+                    pause: < BsPauseFill size={15} color="#4045F5" />
+                  }}
                 />
               </Card.Body>
             </Accordion.Collapse>
