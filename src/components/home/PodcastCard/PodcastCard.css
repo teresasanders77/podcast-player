@@ -309,8 +309,12 @@ color: #4045F5;
   
   @media all and (min-width: 286px) and (max-width: 399px) {
     .card {
-      margin-left: -2%; 
+      margin-left: -3%; 
       max-width: 100%; 
+    }
+
+    .accordion .card {
+      overflow: visible;
     }
   
     .img-fluid {
@@ -327,21 +331,22 @@ color: #4045F5;
     }
   
     .rhap_container {
-      width: 150%;
+      width: 165%;
       margin-left: 8%;
     }
+
     .rhap_volume-bar-area {
       width: 30px;
       margin-left: -20px; 
     }
   
     .rhap_volume-container {
-      margin-right: -102%;
+      display: none;
     }
   
     .rhap_main-controls {
-      margin-left: -30%;
-      margin-top: 3.5%;
+      margin-left: -70%;
+      margin-top: 4.5%;
     }
   
     .rhap_main-controls-button {
@@ -349,7 +354,7 @@ color: #4045F5;
     }
 
     .rhap_additional-controls {
-      margin-left: -55%;
+      margin-left: -95%;
     }
 
     .rhap_progress-section  {
@@ -357,23 +362,30 @@ color: #4045F5;
       margin-top: 20px; 
     }
 
+    .rhap_progress-bar {
+      width: 130%; 
+    }
+
     .rhap_total-time {
       margin-left: 60px; 
+      left: 90px; 
     }
+    
     p {
-      font-size: 16.8px;
+      font-size: 14px;
       line-height: 21.12px; 
       text-align: center; 
     }
 
     h5 {
-      font-size: 19.2px;
+      font-size: 17px;
       line-height: 22.5px; 
       text-align: center; 
     }
 
     h6 {
       text-align: center; 
+      font-size: 16px;
     }
   }
   

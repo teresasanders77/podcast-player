@@ -79,8 +79,8 @@
 @media all and (min-width: 286px) and (max-width: 399px) {
   .resultsContent {
     width: 100%;
-    margin-top: 43%;
-    margin-left: -3%; 
+    margin-top: 50%;
+    margin-left: -5%; 
   }
 
   .resultsCounter {
