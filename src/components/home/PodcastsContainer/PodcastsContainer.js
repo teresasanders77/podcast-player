@@ -32,7 +32,7 @@ const PodcastsContainer = (props) => {
           top: '90px'
         }}>
           <div className="resultsCounter">
-            <a href='/'><BackButton /></a>
+            <a href='/podcast-player'><BackButton /></a>
         &nbsp;&nbsp;&nbsp; Results ({content.length})
         </div>
         </div>
