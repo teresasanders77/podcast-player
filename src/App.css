@@ -39,7 +39,7 @@ body {
 }
   
   /*Small size*/
-@media all and (min-width: 400px) and (max-width: 759px) {
+@media all and (min-width: 601px) and (max-width: 759px) {
   img {
     margin-left: -25%; 
   }
@@ -57,6 +57,19 @@ body {
   }
 }
   
+/*Pixel 2*/
+@media all and (min-width: 400px) and (max-width: 600px) {
+  body {
+    margin-top: 0px; 
+  }
+  .apiLogo {
+    margin-left: -20%;
+  }
+  .logo {
+    margin-top: 15%;
+  }
+}
+
   /*Extra small size*/
 @media all and (max-width: 399px) {
   img {
