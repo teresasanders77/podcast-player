@@ -176,7 +176,6 @@ color: #4045F5;
 .rhap_progress-bar {
   position: absolute;
   width: 260px; 
-  
 }
 
 .rhap_time {
@@ -203,8 +202,61 @@ color: #4045F5;
 
 /*Media queries- mobile responsivity*/
 
+/*iPad Pro*/
+@media all and (min-width: 1020px) and (max-width: 1200px) {
+  .card {
+    margin-left: 5%; 
+    max-width: 100%; 
+  }
+
+  .img-fluid {
+    width: 100%; 
+  }
+
+  .cardHeader {
+    margin-right: -200px; 
+  }
+
+  .card-body {
+    margin-right: 30%; 
+  }
+
+  .rhap_container {
+    width: 105%;
+  }
+  .rhap_volume-bar-area {
+    width: 80px; 
+  }
+
+  .rhap_volume-container {
+    margin-right: 20%;
+  }
+
+  .rhap_main-controls {
+    margin-left: -60%;
+  }
+
+  .rhap_additional-controls {
+    margin-left: -20%;
+  }
+
+  .rhap_progress-bar {
+    position: absolute;
+    margin-left: 50px;
+    width: 260px; 
+  }
+
+  #rhap_current-time {
+    left: 90px; 
+  }
+  
+  .rhap_total-time {
+    left: 148px; 
+  }
+}
+
 /*Medium size*/
-@media all and (min-width: 760px) and (max-width: 1200px) {
+@media all and (min-width: 760px) and (max-width: 1019px) {
   .card {
     margin-left: 5%; 
     max-width: 100%; 
