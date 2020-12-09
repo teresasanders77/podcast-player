@@ -6,7 +6,7 @@ import Logo from './components/Icons/Logo.js'
 import Landing from './components/home/SearchForm/SearchForm';
 import SearchForm from './components/home/Landing/Landing';
 import PodcastsContainer from './components/home/PodcastsContainer/PodcastsContainer';
-import APILogo from './apiLogo.png';
+
 
 import './App.css';
 import store from './store';
@@ -32,9 +32,6 @@ class App extends Component {
             </Switch>
           </SearchForm>
         </Provider>
-        <div className="apiLogo">
-          <a href="https://www.listennotes.com/" target="_blank" rel="noreferrer"> <img src={APILogo} alt="API logo" /></a>
-        </div>
       </div>
     );
   }

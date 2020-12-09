@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchForm from '../SearchForm/SearchForm';
 import PodcastsContainer from '../PodcastsContainer/PodcastsContainer';
+import APILogo from '../../../apiLogo.png';
 import './Landing.css';
 
 
@@ -21,12 +22,14 @@ export class Landing extends Component {
           <h2>Welcome!</h2>
           <h1>Explore top podcasts!</h1>
           <SearchForm />
+          <a href="https://www.listennotes.com/" target="_blank" rel="noreferrer"> <img src={APILogo} className="apiLogo" alt="API logo" /></a>
         </div>
       )
     } else {
       return (
         <div className="resultsBackground">
           <PodcastsContainer />
+          <SearchForm />
         </div>
       )
     }

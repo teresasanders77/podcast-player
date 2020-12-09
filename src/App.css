@@ -11,7 +11,7 @@ body {
   overflow-y: none;
 }
 /*logo styling*/
-img {
+.apiLogo {
   height: 2%; 
   position: fixed; 
   bottom: 5px; 
