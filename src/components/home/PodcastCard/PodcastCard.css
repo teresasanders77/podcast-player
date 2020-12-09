@@ -307,8 +307,7 @@ color: #4045F5;
     }
   }
   
-  /*Extra small size*/
-  @media all and (max-width: 399px) {
+  @media all and (min-width: 286px) and (max-width: 399px) {
     .card {
       margin-left: -2%; 
       max-width: 100%; 
@@ -377,4 +376,86 @@ color: #4045F5;
       text-align: center; 
     }
   }
+  
+  /*Galaxy Fold*/
+  @media all and (max-width: 285px) {
+    .accordion .card {
+      overflow: visible;
+    }
+      .card {
+        margin-left: -5%; 
+        max-width: 100%; 
+      }
+    
+      .img-fluid {
+        width: 30%; 
+        margin-right: 5%;
+      }
+    
+      .cardHeader {
+        margin-right: -200px; 
+      }
+    
+      .card-body {
+        margin-right: 30%; 
+      }
+    
+      .rhap_container {
+        width: 200%;
+        margin-left: 8%;
+      }
+
+      .rhap_volume-bar-area {
+        width: 30px;
+        margin-left: -20px; 
+      }
+    
+      .rhap_volume-container {
+        display: none;
+      }
+    
+      .rhap_main-controls {
+        margin-left: -60%;
+        margin-top: 4.5%;
+      }
+    
+      .rhap_main-controls-button {
+        margin: 5px;
+      }
+  
+      .rhap_additional-controls {
+        margin-left: -95%;
+      }
+  
+      .rhap_progress-section  {
+        margin-left: -155px;
+        margin-top: 20px; 
+      }
+  
+      .rhap_progress-bar {
+        width: 130%; 
+      }
+
+      .rhap_total-time {
+        margin-left: 60px; 
+        left: 90px; 
+      }
+      
+      p {
+        font-size: 80%;
+        line-height: 21.12px; 
+        text-align: center; 
+      }
+  
+      h5 {
+        font-size: 80%;
+        line-height: 22.5px; 
+        text-align: center; 
+      }
+  
+      h6 {
+        text-align: center; 
+        font-size: 80%;
+      }
+    }
   

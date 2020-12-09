@@ -76,7 +76,7 @@
 
 
 /*Extra small size*/
-@media all and (max-width: 399px) {
+@media all and (min-width: 286px) and (max-width: 399px) {
   .resultsContent {
     width: 100%;
     margin-top: 43%;
@@ -94,3 +94,21 @@
   }
 }
 
+/*Galaxy Fold*/
+@media all and (max-width: 285px) {
+  .resultsContent {
+    width: 90%;
+    margin-top: 70%;
+    margin-left: -5%; 
+  }
+
+  .resultsCounter {
+    margin-top: 60%; 
+    margin-left: 0%;
+    width: 100%; 
+  }
+
+  .header {
+    position: sticky; 
+  }
+}

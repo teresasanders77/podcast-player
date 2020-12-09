@@ -138,7 +138,7 @@ h1 {
 }
 
 /*Extra small size*/
-@media all and (max-width: 399px) {
+@media all and (min-width: 286px) and (max-width: 399px) {
   h2 {
     margin-top: 40%;
     margin-left: -73%;
@@ -152,6 +152,45 @@ h1 {
     line-height: 35px;
     letter-spacing: -.5px; 
     margin-right: 16%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  }
+
+  #searchForm {
+    margin-top: 0%;
+    margin-left: 5%; 
+    width: 92%;
+  }
+
+  .fa-microphone:before {
+    margin-right: 200%;
+  }
+
+  .fa-search:before {
+    margin-left: -100%;
+  }
+
+  input.form-control {
+    width: 87%;
+    margin-left: 20px; 
+  }
+}
+
+/*Galaxy Fold*/
+@media all and (max-width: 285px) {
+  h2 {
+    margin-top: 60%;
+    margin-left: -68%;
+    font-size: 16px;
+    line-height: 20.11px;
+    letter-spacing: 0.3555556px; 
+  }
+
+  h1 {
+    font-size: 25px; 
+    line-height: 35px;
+    letter-spacing: -.5px; 
+    margin-right: 9%;
     margin-bottom: 5%;
     margin-top: 3%;
   }

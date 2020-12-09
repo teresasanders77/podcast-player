@@ -76,4 +76,22 @@ body {
   }
 }
 
+/*Galaxy Fold*/
+@media all and (max-width: 285px) {
+  img {
+    margin-left: -25%; 
+  }
+
+  body {
+    margin-top: 0px; 
+  }
+
+  .logo {
+    margin-top: 15%;
+  }
+
+  .apiLogo {
+    margin-left: -25%;
+  }
+}
 
