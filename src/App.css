@@ -10,28 +10,6 @@ body {
   position: static;
   overflow-y: none;
 }
-
-h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
-  line-height: 30px; 
-  letter-spacing: 0.533333px; 
-  color: #030303;
-  padding: 0;
-  margin-top: 21%;
-  margin-bottom: -10px; 
-  margin-left: 112px; 
-}
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px; 
-  letter-spacing: -0.6px; 
-  color: #030303;
-}
-
 /*logo styling*/
 img {
   height: 2%; 
