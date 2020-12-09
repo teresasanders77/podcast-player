@@ -32,6 +32,10 @@ body {
   img {
     margin-left: -15%; 
   } 
+
+  .apiLogo {
+    margin-left: -115px; 
+  }
 }
   
   /*Small size*/
@@ -45,7 +49,11 @@ body {
   }
 
   .logo {
-    margin-top: 15%;
+    margin-top: 0%;
+  }
+
+  .apiLogo {
+    margin-left: -25%;
   }
 }
   
@@ -60,7 +68,11 @@ body {
   }
 
   .logo {
-    margin-top: 15%;
+    margin-top: 0%;
+  }
+
+  .apiLogo {
+    margin-left: -25%;
   }
 }
 
