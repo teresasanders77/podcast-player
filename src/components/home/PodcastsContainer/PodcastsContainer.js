@@ -20,18 +20,22 @@ const PodcastsContainer = (props) => {
   }
   if (content.length > 0) {
     return <div className="podcastContent">
-      <div className="logo">
-        <Logo width="70pt" />
-      </div>
-      <div style={{
-        float: 'left',
-        marginTop: '60px',
-        marginLeft: '20px',
-        position: 'sticky',
-        top: '90px'
-      }}>
-        <a href='/'><BackButton /></a>
+      <div className="header">
+        <div className="logo">
+          <Logo width="70pt" />
+        </div>
+        <div style={{
+          float: 'left',
+          marginTop: '60px',
+          marginLeft: '20px',
+          position: 'sticky',
+          top: '90px'
+        }}>
+          <div className="resultsCounter">
+            <a href='/'><BackButton /></a>
         &nbsp;&nbsp;&nbsp; Results ({content.length})
+        </div>
+        </div>
       </div>
       <div className="resultsContent">
         {content}

@@ -25,16 +25,16 @@ export class PodcastCard extends Component {
     const { podcast } = this.props;
 
     return (
-      <div id="container">
+      <div id="container-fluid">
         <Accordion>
           <Card>
-            <Card.Header>
+            <div className="cardHeader">
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
                 <Row>
-                  <div className="col-lg-3">
-                    <img className="w-100 img-fluid" src={podcast.thumbnail} alt="Podcast Img" />
+                  <div className="col-lg-3 col-md-3">
+                    <img className="img-fluid" src={podcast.thumbnail} alt="Podcast Img" />
                   </div>
-                  <div className="col-md-8">
+                  <div className="col-md-9">
                     <div className="card-body">
                       <h5 className="card-title">{podcast.podcast.title_original}</h5>
                       <h6 className="card-text">{podcast.title_original}</h6>
@@ -44,7 +44,7 @@ export class PodcastCard extends Component {
                   </div>
                 </Row>
               </Accordion.Toggle>
-            </Card.Header>
+            </div>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
                 <AudioPlayer
