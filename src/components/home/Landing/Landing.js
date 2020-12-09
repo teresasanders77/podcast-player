@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchForm from '../SearchForm/SearchForm';
 import PodcastsContainer from '../PodcastsContainer/PodcastsContainer';
-import APILogo from '../../../apiLogo.png';
+import APILogo from '../../../img/apiLogo.png';
 import './Landing.css';
 
 

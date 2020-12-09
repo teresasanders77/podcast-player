@@ -17,6 +17,10 @@
   margin-left: 60px;
 }
 
+.resultsCounter {
+  margin-top: 40%;
+}
+
 .resultsBackground {
   background-color: white; 
 }
