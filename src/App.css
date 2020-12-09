@@ -52,7 +52,15 @@ body {
   /*Extra small size*/
 @media all and (max-width: 399px) {
   img {
-    margin-left: -20%; 
+    margin-left: -25%; 
+  }
+
+  body {
+    margin-top: 10px; 
+  }
+
+  .logo {
+    margin-top: 15%;
   }
 }
 

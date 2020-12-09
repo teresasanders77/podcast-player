@@ -309,5 +309,72 @@ color: #4045F5;
   
   /*Extra small size*/
   @media all and (max-width: 399px) {
-    
+    .card {
+      margin-left: -2%; 
+      max-width: 100%; 
+    }
+  
+    .img-fluid {
+      width: 30%; 
+      margin-right: 5%;
+    }
+  
+    .cardHeader {
+      margin-right: -200px; 
+    }
+  
+    .card-body {
+      margin-right: 30%; 
+    }
+  
+    .rhap_container {
+      width: 150%;
+      margin-left: 8%;
+    }
+    .rhap_volume-bar-area {
+      width: 30px;
+      margin-left: -20px; 
+    }
+  
+    .rhap_volume-container {
+      margin-right: -102%;
+    }
+  
+    .rhap_main-controls {
+      margin-left: -30%;
+      margin-top: 3.5%;
+    }
+  
+    .rhap_main-controls-button {
+      margin: 5px;
+    }
+
+    .rhap_additional-controls {
+      margin-left: -55%;
+    }
+
+    .rhap_progress-section  {
+      margin-left: -155px;
+      margin-top: 20px; 
+    }
+
+    .rhap_total-time {
+      margin-left: 60px; 
+    }
+    p {
+      font-size: 16.8px;
+      line-height: 21.12px; 
+      text-align: center; 
+    }
+
+    h5 {
+      font-size: 19.2px;
+      line-height: 22.5px; 
+      text-align: center; 
+    }
+
+    h6 {
+      text-align: center; 
+    }
   }
+  
