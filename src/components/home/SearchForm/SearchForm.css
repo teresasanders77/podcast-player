@@ -51,7 +51,7 @@ h2 {
   letter-spacing: 0.533333px; 
   color: #030303;
   padding: 0;
-  margin-top: 21%;
+  margin-top: 17.5%;
   margin-bottom: -10px; 
   margin-left: 0px; 
 }
@@ -63,6 +63,7 @@ h1 {
   line-height: 42px; 
   letter-spacing: -0.6px; 
   color: #030303;
+  margin-bottom: -20px; 
 }
 
 /*Media queries- mobile responsivity*/
