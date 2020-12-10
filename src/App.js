@@ -9,8 +9,8 @@ import PodcastsContainer from './components/home/PodcastsContainer/PodcastsConta
 
 
 import './App.css';
-import store from './store';
-
+import { store, persistor } from './store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 class App extends Component {
 
@@ -23,14 +23,16 @@ class App extends Component {
           <a href="/"><Logo width="70pt" /></a>
         </div>
         <Provider store={store}>
-          <SearchForm>
-            <Switch>
-              <Route exact path='/' component={Landing} />
-              <div className="podcastsContainer">
-                <Route path='/results' component={PodcastsContainer} />
-              </div>
-            </Switch>
-          </SearchForm>
+          <PersistGate persistor={persistor}>
+            <SearchForm>
+              <Switch>
+                <Route exact path='/podcast-player' component={Landing} />
+                <div className="podcastsContainer">
+                  <Route path='/results' component={PodcastsContainer} />
+                </div>
+              </Switch>
+            </SearchForm>
+          </PersistGate>
         </Provider>
       </div>
     );
