@@ -4,13 +4,13 @@ body {
   text-align: center;
   height:100vh;
   width: 100%;
-  background-image:radial-gradient(108.1% 52.7% at top left, transparent 92.4%, #4045F5 92.5%);
+  background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;
   position: static;
 }
 
 html {
-  height: 100vw;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;

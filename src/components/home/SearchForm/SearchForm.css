@@ -140,7 +140,7 @@ h1 {
 @media all and (min-width: 400px) and (max-width: 600px) {
   h2 {
     margin-top: 40%;
-    margin-left: -75%;
+    margin-left: -77%;
     font-size: 16px;
     line-height: 20.11px;
     letter-spacing: 0.3555556px; 
@@ -150,7 +150,7 @@ h1 {
     font-size: 28px; 
     line-height: 35px;
     letter-spacing: -.5px; 
-    margin-right: 28%;
+    margin-right: 40%;
     margin-bottom: 5%;
     margin-top: 3%;
   }
@@ -192,7 +192,7 @@ h1 {
     font-size: 28px; 
     line-height: 35px;
     letter-spacing: -.5px; 
-    margin-right: 8%;
+    margin-right: 15%;
     margin-bottom: 5%;
     margin-top: 3%;
   }
