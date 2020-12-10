@@ -4,6 +4,7 @@ import PodcastCard from "../PodcastCard/PodcastCard";
 import './PodcastsContainer.css';
 import BackButton from '../../Icons/BackButton';
 import Logo from '../../Icons/Logo.js'
+import SearchForm from '../SearchForm/SearchForm';
 
 
 
@@ -35,6 +36,9 @@ const PodcastsContainer = (props) => {
             <a href='/podcast-player'><BackButton /></a>
         &nbsp;&nbsp;&nbsp; Results ({content.length})
         </div>
+          <div className="resultsSearch">
+            <SearchForm />
+          </div>
         </div>
       </div>
       <div className="resultsContent">

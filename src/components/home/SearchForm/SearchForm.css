@@ -1,5 +1,5 @@
 #searchForm {
-  position: sticky;
+  position: relative;
   width: 82.89%;
   height: 6.98%;
   top: 20px; 
@@ -10,12 +10,11 @@
 input {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16pt;
-  margin-left: -20px; 
+  margin-left: 0px; 
 }
 
 .rounded, .border-0 {
 background-color:#F5F5F5;
-
 }
 
 #searchForm button {
@@ -43,7 +42,6 @@ background-color:#F5F5F5;
 
 input.form-control {
   height: auto;
-  margin-right: 40px; 
 }
 
 h2 {
