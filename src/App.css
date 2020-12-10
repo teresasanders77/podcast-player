@@ -15,7 +15,7 @@ body {
   height: 2%; 
   position: fixed; 
   bottom: 5px; 
-  margin-left: -4%;
+  margin-left: -5%;
 }
 .logo {
   float: left;
@@ -71,7 +71,7 @@ body {
 }
 
   /*Extra small size*/
-@media all and (max-width: 399px) {
+@media all and (min-width: 286px ) and (max-width: 399px) {
   img {
     margin-left: -25%; 
   }
@@ -81,7 +81,7 @@ body {
   }
 
   .logo {
-    margin-top: 20%;
+    margin-top: -3%;
   }
 
   .apiLogo {

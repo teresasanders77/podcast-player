@@ -54,8 +54,9 @@ p {
 }
 
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 21.12px;
+  font-weight: 700;
   line-height: 26.55px; 
   color: black;
 }
@@ -201,6 +202,32 @@ color: #4045F5;
 
 
 /*Media queries- mobile responsivity*/
+
+/*Medium-Large size*/
+@media all and (min-width: 1201px) and (max-width: 1500px) {
+  .rhap_container {
+    width: 90%;
+  }
+  .rhap_volume-bar-area {
+    width: 80px; 
+  }
+
+  .rhap_volume-container {
+    margin-right: -5%;
+  }
+
+  .rhap_main-controls {
+    margin-left: -40%;
+  }
+
+  .rhap_additional-controls {
+    margin-left: -25%;
+  }
+
+  .rhap_total-time {
+    left: 175px; 
+  }
+}
 
 /*iPad Pro*/
 @media all and (min-width: 1020px) and (max-width: 1200px) {
