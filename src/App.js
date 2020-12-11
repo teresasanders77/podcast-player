@@ -12,29 +12,27 @@ import './App.css';
 import store from './store';
 
 
-class App extends Component {
+const App = () => {
 
-  render() {
 
-    return (
-      /*App Logos, store/routes*/
-      <div className="App">
-        <div className="logo">
-          <a href="/"><Logo width="70pt" /></a>
-        </div>
-        <Provider store={store}>
-          <SearchForm>
-            <Switch>
-              <Route exact path='/' component={Landing} />
-              <div className="podcastsContainer">
-                <Route path='/results' component={PodcastsContainer} />
-              </div>
-            </Switch>
-          </SearchForm>
-        </Provider>
+  return (
+    /*App Logos, store/routes*/
+    <div className="App">
+      <div className="logo">
+        <a href="/"><Logo width="70pt" /></a>
       </div>
-    );
-  }
+      <Provider store={store}>
+        <SearchForm>
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <div className="podcastsContainer">
+              <Route path='/results' component={PodcastsContainer} />
+            </div>
+          </Switch>
+        </SearchForm>
+      </Provider>
+    </div>
+  );
 }
 
 export default App;
