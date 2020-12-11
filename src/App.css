@@ -6,7 +6,8 @@ body {
   width: 100%;
   background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;
-  position: static;
+  position: relative;
+  overflow-x: hidden;
 }
 
 html {
