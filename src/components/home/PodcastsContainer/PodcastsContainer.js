@@ -23,7 +23,7 @@ const PodcastsContainer = (props) => {
     return <div className="podcastContent">
       <div className="header">
         <div className="logo">
-          <Logo width="70pt" />
+          <a href="/"><Logo width="70pt" /></a>
         </div>
         <div style={{
           float: 'left',
