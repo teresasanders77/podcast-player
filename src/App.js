@@ -6,10 +6,10 @@ import Logo from './components/Icons/Logo.js'
 import Landing from './components/home/SearchForm/SearchForm';
 import SearchForm from './components/home/Landing/Landing';
 import PodcastsContainer from './components/home/PodcastsContainer/PodcastsContainer';
-import { store, persistor } from './store';
-import { PersistGate } from 'redux-persist/lib/integration/react';
+
 
 import './App.css';
+import store from './store';
 
 
 const App = () => {
@@ -22,16 +22,14 @@ const App = () => {
         <a href="/"><Logo width="70pt" /></a>
       </div>
       <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <SearchForm>
-            <Switch>
-              <Route exact path='/' component={Landing} />
-              <div className="podcastsContainer">
-                <Route path='/results' component={PodcastsContainer} />
-              </div>
-            </Switch>
-          </SearchForm>
-        </PersistGate>
+        <SearchForm>
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <div className="podcastsContainer">
+              <Route path='/results' component={PodcastsContainer} />
+            </div>
+          </Switch>
+        </SearchForm>
       </Provider>
     </div>
   );
