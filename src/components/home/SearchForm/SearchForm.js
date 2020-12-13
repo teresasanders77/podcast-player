@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
 import './SearchForm.css';
 import { searchPodcast, fetchPodcasts } from '../../../actions/searchActions';
-import history from "../../../history";
 
 export class SearchForm extends Component {
 
@@ -15,8 +14,7 @@ export class SearchForm extends Component {
   onSubmit = e => {
     e.preventDefault();
     this.props.fetchPodcasts(this.props.text)
-    history.push("/results");
-    console.log(this.props)
+    this.props.history.push("/results");
   }
 
   render() {
