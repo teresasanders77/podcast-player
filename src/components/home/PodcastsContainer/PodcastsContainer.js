@@ -13,7 +13,7 @@ const PodcastsContainer = (props) => {
   const { podcasts } = props;
   let content = "";
   if (podcasts === undefined) {
-    alert("Unable to find any movies");
+    console.log("Unable to find any movies");
   } else {
     content =
       podcasts.map((podcast, index) => (

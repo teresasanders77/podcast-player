@@ -20,17 +20,19 @@ const App = () => {
       <div className="logo">
         <a href="/"><Logo width="70pt" /></a>
       </div>
-      <SearchForm>
-        <Switch>
-          <Route exact path='/'>
-            <Landing />
-          </Route>
-          <Route exact path='/results'>
-            <PodcastsContainer />
-          </Route>
-          <Redirect to={'/'} />
-        </Switch>
-      </SearchForm>
+      <Route component={SearchForm} >
+        <div className="welcomeText">
+          <h2>Welcome!</h2>
+          <h1>Explore top podcasts!</h1>
+        </div>
+        <Route exact path='/results'>
+          <PodcastsContainer />
+        </Route>
+        <Route exact path='/'>
+          <Landing />
+        </Route>
+        <Redirect to={'/'} />
+      </Route>
     </div>
   );
 }
