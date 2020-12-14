@@ -18,7 +18,7 @@ const App = () => {
     /*App Logos, store/routes*/
     <div className="App">
       <div className="logo">
-        <a href="/"><Logo width="70pt" /></a>
+        <a href="/podcast-player"><Logo width="70pt" /></a>
       </div>
       <Route component={SearchForm} >
         <div className="welcomeText">
