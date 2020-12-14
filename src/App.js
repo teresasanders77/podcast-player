@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { Route, Switch } from 'react-router-dom'
+import React from 'react';
+
+import { Route, Switch, Redirect } from 'react-router-dom'
 
 import Logo from './components/Icons/Logo.js'
 import Landing from './components/home/SearchForm/SearchForm';
@@ -9,11 +9,10 @@ import PodcastsContainer from './components/home/PodcastsContainer/PodcastsConta
 
 
 import './App.css';
-import store from './store';
+
 
 
 const App = () => {
-
 
   return (
     /*App Logos, store/routes*/
@@ -21,16 +20,17 @@ const App = () => {
       <div className="logo">
         <a href="/"><Logo width="70pt" /></a>
       </div>
-      <Provider store={store}>
-        <SearchForm>
-          <Switch>
-            <Route exact path='/' component={Landing} />
-            <div className="podcastsContainer">
-              <Route path='/results' component={PodcastsContainer} />
-            </div>
-          </Switch>
-        </SearchForm>
-      </Provider>
+      <SearchForm>
+        <Switch>
+          <Route exact path='/'>
+            <Landing />
+          </Route>
+          <Route exact path='/results'>
+            <PodcastsContainer />
+          </Route>
+          <Redirect to={'/'} />
+        </Switch>
+      </SearchForm>
     </div>
   );
 }

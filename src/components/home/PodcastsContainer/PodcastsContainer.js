@@ -5,6 +5,7 @@ import './PodcastsContainer.css';
 import BackButton from '../../Icons/BackButton';
 import Logo from '../../Icons/Logo.js'
 import SearchForm from '../SearchForm/SearchForm';
+import { withRouter } from "react-router-dom";
 
 
 
@@ -51,6 +52,9 @@ const PodcastsContainer = (props) => {
 
 const mapStateToProps = (state) => ({
   podcasts: state.podcasts.podcasts.results,
+  text: state.podcasts.text,
 });
 
-export default connect(mapStateToProps)(PodcastsContainer);
+export default withRouter(connect(
+  mapStateToProps)(PodcastsContainer));
+

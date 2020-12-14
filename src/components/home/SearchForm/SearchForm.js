@@ -5,7 +5,12 @@ import './SearchForm.css';
 import { searchPodcast, fetchPodcasts } from '../../../actions/searchActions';
 
 export class SearchForm extends Component {
-
+  constructor() {
+    super()
+    this.state = {
+      podcasts: []
+    }
+  }
   onChange = e => {
     this.props.searchPodcast(e.target.value);
   }
@@ -45,7 +50,8 @@ export class SearchForm extends Component {
 }
 
 const mapStateToProps = state => ({
-  text: state.podcasts.text
+  text: state.podcasts.text,
+  podcasts: state.podcasts.podcasts.results,
 })
 
 export default withRouter(connect(
