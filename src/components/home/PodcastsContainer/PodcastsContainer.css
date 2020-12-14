@@ -6,7 +6,7 @@
   height:100vh;
   width: 100%;
   margin:0;
-  margin-top: -378px; 
+  margin-top: -19.7%; 
   background-repeat:no-repeat;
   position: fixed;
   overflow-y: scroll;
@@ -45,6 +45,10 @@
 
 /*iPad Pro size*/
 @media all and (min-width: 1020px) and (max-width: 1200px) {
+  .podcastContent {
+    margin-top: -42%; 
+  }
+
   .resultsContent {
     width: 100%;
     margin-top: 27%;
@@ -69,6 +73,10 @@
 
 /*Medium size*/
 @media all and (min-width: 760px) and (max-width: 1019px) {
+  .podcastContent {
+    margin-top: -43%; 
+  }
+
   .resultsContent {
     width: 100%;
     margin-top: 35%;
@@ -112,6 +120,10 @@
 
   /*Surface Duo*/
   @media all and (min-width: 530px) and (max-width: 600px) {
+    .podcastContent {
+      margin-top: -56.2%; 
+    }
+  
     .resultsContent {
       width: 100%;
       margin-top: 50%;
@@ -136,6 +148,10 @@
   
   /*Pixel 2*/
 @media all and (min-width: 400px) and (max-width: 529px) {
+  .podcastContent {
+    margin-top: -65%; 
+  }
+
   .resultsContent {
     width: 100%;
     margin-top: 60%;
@@ -160,6 +176,10 @@
 
 /*Extra small size*/
 @media all and (min-width: 321px) and (max-width: 399px) {
+  .podcastContent {
+    margin-top: -57%; 
+  }
+
   .resultsContent {
     width: 100%;
     margin-top: 60%;
@@ -181,8 +201,39 @@
   }
 }
 
-/*Galaxy Fold and iPhone 5/SE*/
-@media all and (max-width: 320px) {
+/*iPhone 5/SE*/
+@media all and (min-width: 286px) and (max-width: 320px) {
+  .podcastContent {
+    margin-top: -57%; 
+  }
+
+  .resultsContent {
+    width: 100%;
+    margin-top: 65%;
+    margin-left: -5%; 
+  }
+
+  .resultsCounter {
+    margin-top: 5%; 
+    margin-left: -30%;
+    width: 100%; 
+  }
+
+  .resultsSearch {
+    width: 107%; 
+    margin-left: -7%; 
+  }
+  .header {
+    position: sticky; 
+  }
+}
+
+/*Galaxy Fold*/
+@media all and (max-width: 285px) {
+  .podcastContent {
+    margin-top: -75%; 
+  }
+
   .resultsContent {
     width: 100%;
     margin-top: 65%;
