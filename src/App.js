@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
 
 import Logo from './components/Icons/Logo.js'
 import Landing from './components/home/SearchForm/SearchForm';
@@ -28,10 +28,9 @@ const App = () => {
         <Route exact path='/results'>
           <PodcastsContainer />
         </Route>
-        <Route exact path='/'>
+        <Route exact path='/podcast-player'>
           <Landing />
         </Route>
-        <Redirect to={'/'} />
       </Route>
     </div>
   );

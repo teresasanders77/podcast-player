@@ -2,22 +2,19 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import rootReducer from './reducers';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 
-function saveToLocalStorage(state) {
-  try {
-    const serializedState = JSON.stringify(state)
-    localStorage.setItem('state', serializedState)
-  } catch (e) {
-    console.log(e)
-  }
-}
 
 const middleware = [thunk];
 const initialState = {};
 
-const store = createStore(rootReducer, initialState, composeWithDevTools
+
+export const store = createStore(rootReducer, initialState, composeWithDevTools
   (applyMiddleware(...middleware)));
 
-store.subscribe(() => saveToLocalStorage(store.getState()))
+export const persistor = persistStore(store)
 
-export default store;
+// eslint-disable-next-line import/no-anonymous-default-export
+export default { store, persistor };
