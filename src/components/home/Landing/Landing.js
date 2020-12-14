@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SearchForm from '../SearchForm/SearchForm';
-
 import APILogo from '../../../img/apiLogo.png';
 import './Landing.css';
 

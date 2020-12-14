@@ -1,16 +1,11 @@
 import React from 'react';
-
-import { Route, Redirect } from 'react-router-dom'
-
+import { Route } from 'react-router-dom'
 import Logo from './components/Icons/Logo.js'
 import Landing from './components/home/SearchForm/SearchForm';
 import SearchForm from './components/home/Landing/Landing';
 import PodcastsContainer from './components/home/PodcastsContainer/PodcastsContainer';
 
-
 import './App.css';
-
-
 
 const App = () => {
 
