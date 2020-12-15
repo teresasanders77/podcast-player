@@ -24,8 +24,34 @@ We are looking forward to adding the following extra functionality soon!
 * Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * The page will reload if you make edits.
 
+## GitHub Pages Deployment
+1. Install the [gh-pages package](https://www.npmjs.com/package/gh-pages) as a "dev-dependency" of the app:
+```npm i gh-pages```<br>
+2. Add to ```package.json``` the following items: <br>
 
+```"homepage": "http://<Your user name>.github.io/<project name>"```<br>
 
+```
+"scripts": { <br>
+    //... 
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build" 
+}
+```
+
+3. Run the following commands in your terminal, in your project directory: 
+
+```
+$ git init
+$ git remote add origin https://github.com/<username>/<project name>.git
+$ git add .
+$ git commit -m "Publishing create-react-app to GitHub Pages"
+$ git push origin master
+$ npm run deploy 
+```
+
+4. Notes on using GitHub pages to host a React app <br><br>
+ GitHub Pages is a static server that doesn't support single page apps. In order to be able to refresh, or deal with routing issues, there are a few steps you will need to take. Refer to [spa-github-pages](https://github.com/rafgraph/spa-github-pages) and follow the steps to ensure your app is correctly functioning once deployed. 
 
  ## Project Dependencies
  ```"axios": "^0.21.0",
