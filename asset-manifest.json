@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/podcast-player/static/css/main.9fb5a1f7.chunk.css",
-    "main.js": "/podcast-player/static/js/main.adb55d59.chunk.js",
-    "main.js.map": "/podcast-player/static/js/main.adb55d59.chunk.js.map",
+    "main.js": "/podcast-player/static/js/main.fc8be9f8.chunk.js",
+    "main.js.map": "/podcast-player/static/js/main.fc8be9f8.chunk.js.map",
     "runtime-main.js": "/podcast-player/static/js/runtime-main.b43ef54e.js",
     "runtime-main.js.map": "/podcast-player/static/js/runtime-main.b43ef54e.js.map",
     "static/css/2.3e35cbb6.chunk.css": "/podcast-player/static/css/2.3e35cbb6.chunk.css",
-    "static/js/2.b2a9f936.chunk.js": "/podcast-player/static/js/2.b2a9f936.chunk.js",
-    "static/js/2.b2a9f936.chunk.js.map": "/podcast-player/static/js/2.b2a9f936.chunk.js.map",
+    "static/js/2.e8da7bba.chunk.js": "/podcast-player/static/js/2.e8da7bba.chunk.js",
+    "static/js/2.e8da7bba.chunk.js.map": "/podcast-player/static/js/2.e8da7bba.chunk.js.map",
     "static/js/3.a5368342.chunk.js": "/podcast-player/static/js/3.a5368342.chunk.js",
     "static/js/3.a5368342.chunk.js.map": "/podcast-player/static/js/3.a5368342.chunk.js.map",
     "index.html": "/podcast-player/index.html",
     "static/css/2.3e35cbb6.chunk.css.map": "/podcast-player/static/css/2.3e35cbb6.chunk.css.map",
     "static/css/main.9fb5a1f7.chunk.css.map": "/podcast-player/static/css/main.9fb5a1f7.chunk.css.map",
-    "static/js/2.b2a9f936.chunk.js.LICENSE.txt": "/podcast-player/static/js/2.b2a9f936.chunk.js.LICENSE.txt",
+    "static/js/2.e8da7bba.chunk.js.LICENSE.txt": "/podcast-player/static/js/2.e8da7bba.chunk.js.LICENSE.txt",
     "static/media/apiLogo.443fcec0.png": "/podcast-player/static/media/apiLogo.443fcec0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b43ef54e.js",
     "static/css/2.3e35cbb6.chunk.css",
-    "static/js/2.b2a9f936.chunk.js",
+    "static/js/2.e8da7bba.chunk.js",
     "static/css/main.9fb5a1f7.chunk.css",
-    "static/js/main.adb55d59.chunk.js"
+    "static/js/main.fc8be9f8.chunk.js"
   ]
 }
