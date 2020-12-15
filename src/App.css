@@ -2,7 +2,9 @@
 body {
   font-family: 'Playfair Display', serif;
   text-align: center;
-  height:100vh;
+  min-height:100vh;
+  height: auto;
+  margin: 0;
   width: 100%;
   background-image:radial-gradient(108.1% 108% at top left, transparent 92.4%, #4045F5 92.5%);
   background-repeat:no-repeat;

@@ -329,7 +329,7 @@ color: #4045F5;
     }
   
     .img-fluid {
-      width: 30%; 
+      width: 100%; 
       margin-right: 5%;
     }
   
@@ -387,7 +387,7 @@ color: #4045F5;
   }
   
   /*Pixel 2*/
-@media all and (min-width: 400px) and (max-width: 600px) {
+@media all and (min-width: 575px) and (max-width: 600px) {
   .card {
     margin-left: -3%; 
     max-width: 100%; 
@@ -398,7 +398,7 @@ color: #4045F5;
   }
 
   .img-fluid {
-    width: 30%; 
+    width: 100%; 
     margin-right: 30%;
   }
 
@@ -470,7 +470,7 @@ color: #4045F5;
 }
 
   /*Extra-small Size*/
-  @media all and (min-width: 286px) and (max-width: 399px) {
+  @media all and (min-width: 286px) and (max-width: 574px) {
     .card {
       margin-left: -3%; 
       max-width: 100%; 
@@ -480,9 +480,14 @@ color: #4045F5;
       overflow: visible;
     }
   
+    .img-fluid.center {
+      display: block;
+      margin: 0 auto;
+    }
+
     .img-fluid {
-      width: 30%; 
-      margin-right: 5%;
+      width: 40% !important; 
+      margin-right: 30%; 
     }
   
     .cardHeader {
@@ -562,9 +567,13 @@ color: #4045F5;
         max-width: 100%; 
       }
     
+      .img-fluid.center {
+        display: block;
+        margin: 0 auto;
+      }
+  
       .img-fluid {
-        width: 30%; 
-        margin-right: 5%;
+        width: 50% !important; 
       }
     
       .cardHeader {
