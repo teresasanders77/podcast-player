@@ -467,13 +467,17 @@ color: #4045F5;
 
   .rhap_main-controls {
     margin-left: -100%;
-    margin-top: 6%;
+    margin-top: 10%;
   }
 
   .rhap_main-controls-button {
     margin: 5px;
   }
 
+  .rhap_controls-section {
+    margin-top: 5%; 
+  }
+  
   .rhap_additional-controls {
     margin-left: -90%;
   }
@@ -488,7 +492,7 @@ color: #4045F5;
 
   .rhap_total-time {
     margin-left: 60px; 
-    left: 90px; 
+    left: 115px; 
   }
   
   p {

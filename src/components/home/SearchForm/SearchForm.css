@@ -162,11 +162,14 @@ h1 {
   #searchForm {
     margin-top: 0%;
     margin-left: 5%; 
-    width: 92%;
+    width: 90%;
   }
 
+  .input {
+    width: 90%; 
+  }
   .fa-microphone:before {
-    margin-right: 150%;
+    margin-right:0%;
   }
 
   .fa-search:before {
