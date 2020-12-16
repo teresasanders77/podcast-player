@@ -63,6 +63,7 @@ $ npm run deploy
 
  ## Project Dependencies
  ```"axios": "^0.21.0",
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
@@ -70,10 +71,12 @@ $ npm run deploy
     "react-h5-audio-player": "^3.5.0",
     "react-icons": "^4.1.0",
     "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "use-react-router": "^1.0.7",
     "web-vitals": "^0.2.4"```
