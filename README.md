@@ -6,7 +6,9 @@ An uncomplicated podcast player that lets users listen to a variety of podcasts 
 
 ![Home Screen](https://github.com/teresasanders77/podcast-player/blob/master/HomePage.png)<br>
 ![Results Screen](https://github.com/teresasanders77/podcast-player/blob/master/ResultsPage.png)<br>
-
+<p align="center">
+<img src="https://github.com/teresasanders77/podcast-player/blob/master/MobileDevice.png" width="250"/>
+ </p>
 
 ## Key Features
 * A functional search to filter through the podcast API.
