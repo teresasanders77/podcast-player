@@ -2,6 +2,8 @@
 
 An uncomplicated podcast player that lets users listen to a variety of podcasts of their choosing. The app is built using [create-react-app](https://create-react-app.dev/), [react-h5-audio-player](https://github.com/lhz516/react-h5-audio-player/releases), and the [ListenNotes API](https://www.listennotes.com/api/).
 
+[View Demo](https://teresasanders77.github.io/podcast-player/#/)
+
 ![Home Screen](https://github.com/teresasanders77/podcast-player/blob/master/HomePage.png)<br>
 ![Results Screen](https://github.com/teresasanders77/podcast-player/blob/master/ResultsPage.png)<br>
 
