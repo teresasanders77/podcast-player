@@ -44,7 +44,7 @@ border: none;
 }
 
 .row {
-  height: 232px;
+  min-height: 232px;
 }
 
 .card-text:last-child {
@@ -82,13 +82,13 @@ h6 {
 
 .rhap_container {
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 15%;
   font-family: 'Source Sans Pro', sans-serif;
   border-color: #4045F5;
   border-style: solid; 
   border-radius: 40px;
   border-width: 1px; 
-  width: 80%; 
+  width: 110%; 
   height: 83px;
 }
 
@@ -179,7 +179,7 @@ color: #4045F5;
 /*Progress bar*/
 .rhap_progress-section {
   position: relative;
-  left: 130px; 
+  left: 95px; 
   bottom: 100px; 
 }
 
