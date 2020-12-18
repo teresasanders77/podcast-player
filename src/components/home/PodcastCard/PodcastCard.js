@@ -30,7 +30,7 @@ export class PodcastCard extends Component {
           <Card>
             <div className="cardHeader">
               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                <Row>
+                <Row className="row">
                   <div className="col-lg-3 col-md-3 col-sm-2" >
                     <img className="img-fluid" src={podcast.thumbnail} alt="Podcast Img" />
                   </div>
