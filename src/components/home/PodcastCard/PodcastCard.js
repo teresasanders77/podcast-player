@@ -22,9 +22,10 @@ export class PodcastCard extends Component {
       .join(':');
   }
 
-
   render() {
     const { podcast } = this.props;
+    const originalDescription = podcast.description_highlighted;
+    const strippedDescription = originalDescription.replace(/(<([^>]+)>)/gi, "");
     return (
       <div id="container-fluid">
         <Accordion>
@@ -43,7 +44,7 @@ export class PodcastCard extends Component {
                         {podcast.description_highlighted.length > MAX_LENGTH ?
                           (
                             <p>
-                              {`${podcast.description_highlighted.substring(0, MAX_LENGTH)}...`}
+                              {`${strippedDescription.substring(0, MAX_LENGTH)}...`}
                             </p>
                           ) :
                           <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
