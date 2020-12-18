@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import 'react-h5-audio-player/lib/styles.css';
 import './PodcastCard.css';
 
+const MAX_LENGTH = 250;
 export class PodcastCard extends Component {
 
   /*Function to turn the podcast length from seconds to minutes*/
@@ -21,9 +22,9 @@ export class PodcastCard extends Component {
       .join(':');
   }
 
+
   render() {
     const { podcast } = this.props;
-
     return (
       <div id="container-fluid">
         <Accordion>
@@ -38,7 +39,16 @@ export class PodcastCard extends Component {
                     <div className="card-body">
                       <h5 className="card-title">{podcast.podcast.title_original}</h5>
                       <h6 className="card-text">{podcast.title_original}</h6>
-                      <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
+                      <div>
+                        {podcast.description_highlighted.length > MAX_LENGTH ?
+                          (
+                            <p>
+                              {`${podcast.description_highlighted.substring(0, MAX_LENGTH)}...`}
+                            </p>
+                          ) :
+                          <p className="card-text" dangerouslySetInnerHTML={{ __html: podcast.description_highlighted }} />
+                        }
+                      </div>
                       <p className="card-text">{this.formatTime(podcast.audio_length_sec)} </p>
                     </div>
                   </div>
