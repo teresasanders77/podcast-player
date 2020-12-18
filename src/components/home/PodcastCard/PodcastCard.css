@@ -184,6 +184,10 @@ color: #4045F5;
   bottom: 100px; 
 }
 
+.rhap_progress-container {
+  width: 300%;
+}
+
 .rhap_progress-bar {
   position: absolute;
   width: 300%; 
@@ -199,7 +203,7 @@ color: #4045F5;
 }
 
 .rhap_total-time {
-  left: 235%; 
+  left: -30%; 
 }
 
 .rhap_progress-indicator {
